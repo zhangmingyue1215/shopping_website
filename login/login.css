@@ -1,0 +1,290 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+/*顶部*/
+#top{
+	position: relative;
+	width: 1280px;
+	height: 50px;
+	background-color: #d41a39;
+}
+#top p{
+	color: white;
+	font-size: 13px;
+}
+.welcome{
+	position: absolute;
+	left:100px;
+	top: 5px;
+	width: 100px;
+
+}
+.introduce{
+	position: absolute;
+	left: 300px;
+	top: 5px;
+	width: 385px;
+}
+#top_list{
+	position: absolute;
+	left: 700px;
+	top: -3px;
+}
+#top_list li{
+	list-style: none;
+	float: left;
+	color: white;
+	font-size: 13px;
+	margin-left: 10px;
+	padding: 5px 0;
+}
+#top_list li a{
+	text-decoration: none;
+	font-size: 13px;
+	color:white;
+}
+#user{
+	width: 60px;
+	height: 15px;
+	background-color: #d41a39;
+	border: 1px solid white;
+	margin: 10px;
+	position: absolute;
+	left: 282px;
+	top: 10px;
+	display: none;
+}
+#drop-down:hover #user{
+	display: block;
+}
+/*登录页面*/
+#login{
+	width: 1280px;
+	height: 610px;
+	position:relative; 
+}
+.logo{
+	position: absolute;
+	left: 100px;
+	top: 46px;
+}
+.welcome_language{
+	position: absolute;
+	left: 380px;
+	top: 45px;
+	color: #252525;
+	font-size: 25px;
+}
+.login_image{
+	position: absolute;
+	left: 90px;
+	top: 175px;
+}
+.logo2{
+	position: absolute;
+	top: 165px;
+	left: 810px;
+}
+.account_p{
+	position: absolute;
+	left: 666px;
+	top: 260px;
+	color: #252525;
+	font-size: 20px;
+}#account_input{
+	position: absolute;
+	left: 750px;
+	top: 270px;
+	width: 380px;
+	height: 35px;
+	border: 2px solid #6d6d6d;
+}
+.password_p{
+	position: absolute;
+	left: 666px;
+	top: 340px;
+	color: #252525;
+	font-size: 20px;
+}#password_input{
+	position: absolute;
+	left: 750px;
+	top: 350px;
+	width: 380px;
+	height: 35px;
+	border: 2px solid #6d6d6d;
+}
+#forget_password{
+	position: absolute;
+	left: 1065px;
+	top: 410px;
+	text-decoration: none;
+	font-size: 15px;
+	color: #252525;
+}
+#login_btn{
+	position: absolute;
+	left: 820px;
+	top: 470px;
+	width: 250px;
+	height: 40px;
+	border: none;
+	background-color: #d41a39;
+	color: white;
+	font-size: 20px;
+}
+/*底部*/
+#bottom{
+	position: relative;
+	width: 1280px;
+	height: 230px;
+	background-color: #d41a39;
+}
+.service_guarantee{
+	position: absolute;
+	left: 130px;
+	top: 10px;
+	color: white;
+	font-size: 15px;
+}
+#service_list{
+	position: absolute;
+	left: 90px;
+	top: 35px;
+}
+#service li{
+	list-style: none;
+	color: white;
+	font-size: 10px;
+	margin-top: 10px;
+}
+.use_help{
+	position: absolute;
+	left: 270px;
+	top: 10px;
+	color: white;
+	font-size: 15px;
+}
+#help_list{
+	position: absolute;
+	left: 230px;
+	top: 35px;
+}
+#help li{
+	list-style: none;
+	color: white;
+	font-size: 10px;
+	margin-top: 10px;
+}
+.pay_style{
+	position: absolute;
+	left: 410px;
+	top: 10px;
+	color: white;
+	font-size: 15px;
+}
+#pay_list{
+	position: absolute;
+	left: 370px;
+	top: 35px;
+}
+#pay li{
+	list-style: none;
+	color: white;
+	font-size: 10px;
+	margin-top: 10px;
+}
+.distribution_style{
+	position: absolute;
+	left: 560px;
+	top: 10px;
+	color: white;
+	font-size: 15px;
+}
+#distribution_list{
+	position: absolute;
+	left: 510px;
+	top: 35px;
+}
+#distribution li{
+	list-style: none;
+	color: white;
+	font-size: 10px;
+	margin-top: 10px;
+}
+.after_sales_service{
+	position: absolute;
+	left: 690px;
+	top: 10px;
+	color: white;
+	font-size: 15px;
+}
+#after_sales_list{
+	position: absolute;
+	left: 650px;
+	top: 35px;
+}
+#after_sales li{
+	list-style: none;
+	color: white;
+	font-size: 10px;
+	margin-top: 10px;
+}
+.phone_client{
+	position: absolute;
+	left: 830px;
+	top: 10px;
+	color: white;
+	font-size: 15px;
+}
+.phone_ewm{
+	position: absolute;
+	left: 837px;
+	top: 50px;
+}
+.scan{
+	position: absolute;
+	left: 843px;
+	top: 155px;
+	font-size: 13px;
+	color: white;
+}
+.official_weixin{
+	position: absolute;
+	left: 1040px;
+	top: 10px;
+	color: white;
+	font-size: 15px;
+}
+.weixin_ewm{
+	position: absolute;
+	left: 1020px;
+	top: 49px;
+}
+.official_scan{
+	position: absolute;
+	left: 1030px;
+	top: 155px;
+	font-size: 13px;
+	color: white;
+}
+.statement{
+	position: absolute;
+	top: 180px;
+	left: 180px;
+	color: white;
+	font-size: 8px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
