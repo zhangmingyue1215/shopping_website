@@ -6,42 +6,42 @@ body{
 #top{
 	position: relative;
 	width: 1280px;
-	height: 50px;
+	height: 35px;
 	background-color: #d41a39;
 }
 #top p{
 	color: white;
-	font-size: 13px;
+	font-size: 12px;
 }
 .welcome{
 	position: absolute;
-	left:100px;
-	top: 5px;
-	width: 100px;
+	left:200px;
+	top: 0px;
+	width:100px;
 
 }
 .introduce{
 	position: absolute;
-	left: 300px;
-	top: 5px;
+	left: 345px;
+	top: 0px;
 	width: 385px;
 }
 #top_list{
 	position: absolute;
 	left: 700px;
-	top: -3px;
+	top: -10px;
 }
 #top_list li{
 	list-style: none;
 	float: left;
 	color: white;
-	font-size: 13px;
-	margin-left: 10px;
+	font-size: 12px;
+	margin-left: 5px;
 	padding: 5px 0;
 }
 #top_list li a{
 	text-decoration: none;
-	font-size: 13px;
+	font-size: 12px;
 	color:white;
 }
 #user{
@@ -51,14 +51,13 @@ body{
 	border: 1px solid white;
 	margin: 10px;
 	position: absolute;
-	left: 282px;
+	left: 233px;
 	top: 10px;
 	display: none;
 }
 #drop-down:hover #user{
 	display: block;
 }
-
 /*注册页面*/
 #reg{
 	width: 1280px;
@@ -67,33 +66,34 @@ body{
 }
 .logo{
 	position: absolute;
-	left: 100px;
+	left: 190px;
 	top: 30px;
 }
 .reg_image{
 	position: absolute;
-	left: 520px;
+	left: 550px;
 	top: 50px;
+	width: 18%;
 }
 .phone_num{
 	position: absolute;
 	top: 150px;
-	left: 160px;
+	left: 225px;
 	font-size: 18px;
 }
 #phone_num_input{
-	width: 320px;
+	width: 255px;
 	height: 30px;
 	border: 2px solid #6d6d6d;
 	position: absolute;
 	top: 140px;
-	left: 270px;
+	left: 340px;
 }
 #phone_code_btn{
 	position: absolute;
 	top: 140px;
-	left: 597px;
-	width: 80px;
+	left: 602px;
+	width: 75px;
 	height: 36px;
 	background-color: #d41a39;
 	color: white;
@@ -103,37 +103,37 @@ body{
 .msg_code{
 	position: absolute;
 	top: 230px;
-	left: 160px;
+	left: 225px;
 	font-size: 18px;
 }
 #msg_code_input{
-	width: 402px;
+	width: 332px;
 	height: 30px;
 	border: 2px solid #6d6d6d;
 	position: absolute;
 	top: 220px;
-	left: 270px;
+	left: 340px;
 }
 
 .username{
 	position: absolute;
 	top: 310px;
-	left: 160px;
+	left: 225px;
 	font-size: 18px;
 }
 #username_input{
-	width: 320px;
+	width: 255px;
 	height: 30px;
 	border: 2px solid #6d6d6d;
 	position: absolute;
 	top: 300px;
-	left: 270px;
+	left: 340px;
 }
 #username_btn{
 	position: absolute;
 	top: 300px;
-	left: 597px;
-	width: 80px;
+	left: 602px;
+	width: 75px;
 	height: 36px;
 	background-color: #d41a39;
 	color: white;
@@ -143,58 +143,58 @@ body{
 .password{
 	position: absolute;
 	top: 390px;
-	left: 160px;
+	left: 225px;
 	font-size: 18px;
 }
 #password_input{
-	width: 402px;
+	width: 332px;
 	height: 30px;
 	border: 2px solid #6d6d6d;
 	position: absolute;
 	top: 380px;
-	left: 270px;
+	left: 340px;
 }
 .confirm_password{
 	position: absolute;
 	top: 470px;
-	left: 160px;
+	left: 225px;
 	font-size: 18px;
 }
 #confirm_password_input{
-	width: 402px;
+	width: 332px;
 	height: 30px;
 	border: 2px solid #6d6d6d;
 	position: absolute;
 	top: 460px;
-	left: 270px;
+	left: 340px;
 }
 .email{
 	position: absolute;
 	top: 550px;
-	left: 160px;
+	left: 225px;
 	font-size: 18px;
 }
 #email_input{
-	width: 402px;
+	width: 332px;
 	height: 30px;
 	border: 2px solid #6d6d6d;
 	position: absolute;
 	top: 540px;
-	left: 270px;
+	left: 340px;
 }
 .code{
 	position: absolute;
 	top: 630px;
-	left: 160px;
+	left: 225px;
 	font-size: 18px;
 }
 #code_input{
-	width: 402px;
+	width: 332px;
 	height: 30px;
 	border: 2px solid #6d6d6d;
 	position: absolute;
 	top: 620px;
-	left: 270px;
+	left: 340px;
 }
 #yzm_img{
 	position: absolute;
