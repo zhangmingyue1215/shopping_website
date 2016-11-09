@@ -1,123 +1,66 @@
-body{
-	margin: 0;
-	padding: 0;
-}
-/*顶部*/
-#top{
-	position: relative;
-	width: 1280px;
-	height: 35px;
-	background-color: #d41a39;
-}
-#top p{
-	color: white;
-	font-size: 12px;
-}
-.welcome{
-	position: absolute;
-	left:200px;
-	top: 0px;
-	width:100px;
 
-}
-.introduce{
-	position: absolute;
-	left: 345px;
-	top: 0px;
-	width: 385px;
-}
-#top_list{
-	position: absolute;
-	left: 700px;
-	top: -10px;
-}
-#top_list li{
-	list-style: none;
-	float: left;
-	color: white;
-	font-size: 12px;
-	margin-left: 5px;
-	padding: 5px 0;
-}
-#top_list li a{
-	text-decoration: none;
-	font-size: 12px;
-	color:white;
-}
-#user{
-	width: 60px;
-	height: 15px;
-	background-color: #d41a39;
-	border: 1px solid white;
-	margin: 10px;
-	position: absolute;
-	left: 233px;
-	top: 10px;
-	display: none;
-}
-#drop-down:hover #user{
-	display: block;
-}
 /*登录页面*/
 #login{
-	width: 1280px;
+	width: 1010px;
 	height: 610px;
 	position:relative; 
+	margin: 0 auto;
+	
 }
 .logo{
 	position: absolute;
-	left: 190px;
-	top: 46px;
+	left: 0px;
+	top: 45px;
 }
 .welcome_language{
 	position: absolute;
-	left: 440px;
-	top: 45px;
+	left: 235px;
+	top: 70px;
 	color: #252525;
 	font-size: 25px;
 }
 .login_image{
 	position: absolute;
-	left: 185px;
-	top: 175px;
-	width: 40%;
+	left: 0px;
+	top: 185px;
+	width: 50%;
 }
 .logo2{
 	position: absolute;
 	top: 165px;
-	left: 810px;
+	left: 680px;
 }
 .account_p{
 	position: absolute;
-	left: 690px;
+	left: 510px;
 	top: 260px;
 	color: #252525;
 	font-size: 20px;
 }#account_input{
 	position: absolute;
-	left: 750px;
-	top: 270px;
+	left: 590px;
+	top: 255px;
 	width: 345px;
 	height: 35px;
 	border: 2px solid #6d6d6d;
 }
 .password_p{
 	position: absolute;
-	left: 690px;
+	left: 510px;
 	top: 340px;
 	color: #252525;
 	font-size: 20px;
 }#password_input{
 	position: absolute;
-	left: 750px;
-	top: 350px;
+	left: 590px;
+	top: 335px;
 	width: 345px;
 	height: 35px;
 	border: 2px solid #6d6d6d;
 }
 #forget_password{
 	position: absolute;
-	left: 1045px;
+	left: 870px;
 	top: 410px;
 	text-decoration: none;
 	font-size: 13px;
@@ -125,8 +68,8 @@ body{
 }
 #login_btn{
 	position: absolute;
-	left: 815px;
-	top: 470px;
+	left: 655px;
+	top: 450px;
 	width: 220px;
 	height: 40px;
 	border: none;
