@@ -95,7 +95,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	top: 85px;
-	left: 885px;	
+	left: 872px;	
 }
 .choose_style{
 	color: #9c9b9b;
@@ -344,14 +344,18 @@ body{
 }
 #gopay{
 	background-color: #d41a39;
-	font-size: 15px;
-	color: white;
+	
 	width: 135px;
 	height: 47px;
 	position: absolute;
 	left: 955px;
 	top: 540px;
 	border: none;
+}
+#gopay a{
+	font-size: 15px;
+	color: white;
+	text-decoration:none;
 }
 
 #allselect3{
