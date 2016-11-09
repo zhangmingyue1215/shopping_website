@@ -5,7 +5,7 @@ body{
 /*顶部*/
 #top{
 	position: relative;
-	width: 1280px;
+	width: 100%px;
 	height: 35px;
 	background-color: #d41a39;
 }
@@ -606,7 +606,7 @@ body{
 /*底部*/
 #bottom{
 	position: relative;
-	width: 1280px;
+	width: 100%px;
 	height: 230px;
 	background-color: #d41a39;
 }

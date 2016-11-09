@@ -1,106 +1,49 @@
-body{
-	margin: 0;
-	padding: 0;
-}
-/*顶部*/
-#top{
-	position: relative;
-	width: 100%;
-	height: 35px;
-	background-color: #d41a39;
-}
-#top p{
-	color: white;
-	font-size: 12px;
-}
-.welcome{
-	position: absolute;
-	left:200px;
-	top: 0px;
-	width:100px;
 
-}
-.introduce{
-	position: absolute;
-	left: 345px;
-	top: 0px;
-	width: 385px;
-}
-#top_list{
-	position: absolute;
-	left: 700px;
-	top: -10px;
-}
-#top_list li{
-	list-style: none;
-	float: left;
-	color: white;
-	font-size: 12px;
-	margin-left: 5px;
-	padding: 5px 0;
-}
-#top_list li a{
-	text-decoration: none;
-	font-size: 12px;
-	color:white;
-}
-#user{
-	width: 60px;
-	height: 15px;
-	background-color: #d41a39;
-	border: 1px solid white;
-	margin: 10px;
-	position: absolute;
-	left: 233px;
-	top: 10px;
-	display: none;
-}
-#drop-down:hover #user{
-	display: block;
-}
 /*搜索栏*/
-#search{
-	width: 100%;
-	height: 160px;
-	position:relative;
+.search{
+	height: 150px;
+    width: 1010px;
+    margin: 0px auto;
+	
 	 
 }
 .logo{
 	position: absolute;
-	left: 190px;
-	top: 46px;
+	left: 135px;
+	top: 80px;
 }
 #search_input{
 	position: absolute;
-	left: 475px;
-	top: 55px;
-	width: 310px;
-	height: 35px;
-	border: 3px solid #020202;
+    left: 420px;
+    top: 85px;
+    width: 382px;
+    height: 30px;
+    border: 4px solid #020202;
 }
 #search_btn{
 	position: absolute;
-	left: 793px;
-	top: 55px;
-	width: 80px;
-	height: 43px;
-	background-color: #020202;
-	color: white;
-	font-size: 17px;
-	border: none;
-	cursor: pointer;
+    left: 810px;
+    top: 85px;
+    width: 85px;
+    height: 38px;
+    background-color: #020202;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+
 }
 .goods_list{
 	position: absolute;
-	left:450px;
-	top: 95px; 
+	left:430px;
+	top: 135px; 
 }
 .goods_list li{
 	float: left;
 	font-size: 12px;
 	color: #cbcbcb;
 	list-style: none;
-	margin-left: 1px;
+	margin-left: 7px;
 }
 .goods_list a{
 	text-decoration: none;
@@ -111,13 +54,13 @@ body{
 }
 .shopping_car_img{
 	position: absolute;
-	left: 965px;
-	top: 70px;
+	left: 1005px;
+	top: 100px;
 }
 #shopping_car{
 	position: absolute;
-	left: 1005px;
-	top: 75px;
+	left: 1045px;
+	top: 100px;
 	font-size: 15px;
 	color: #020202;
 	text-decoration: none;
@@ -128,6 +71,7 @@ body{
 	width: 100%;
 	height: 40px;
 	background-color: #000000;
+	margin: 0 auto;
 }
 .ani_red {
     position: absolute;
@@ -137,15 +81,13 @@ body{
     padding: 0;
 }
 .nav{
-	position: absolute;
-	left: 135px;
-	top: 179px;
-	width: 740px;
+	width: 1010px;
+	margin: 0 auto;
 }
 .nav_li {
     display: inline-block;
     height: 100%;
-    padding: 12px 35px;
+    padding: 13px 35px;
     cursor: pointer;
     position: relative;
 }
@@ -160,69 +102,79 @@ body{
 /*轮播*/
 #banner{
 	width: 100%;
+	margin: 0 auto;
 }
 /*今日特惠*/
 .today_special{
-	width: 100%;
+	width: 1010px;
 	height: 1280px;
-	
+	margin: 0 auto;
+	position: relative;
 	
 }
 .today_special_title{
 	color: #86171e;
 	font-size: 25px;
 	position: absolute;
-	left: 485px;
-	top: 480px;
+	left: 340px;
+	top: 20px;
 }
 .hr{
 	border-bottom: 2px solid #050001;
 	width: 400px;
 }
+#special_1{
+	position: absolute;
+	top: 100px;
+	left: 40px;
+	
+	width: 410px;
+	height: 190px;
+}
 #hr1{
 	position: absolute;
-	left: 190px;
-	top: 600px;
+	left: 0px;
+	top: 0px;
 }
 #special01{
 	position: absolute;
-	left: 190px;
-	top: 602px;
-	width: 31%;
+	left: 0px;
+	top: 2px;
+	width: 100%;
 }
 #special01_name{
 	position: absolute;
-	left: 395px;
-	top: 610px;
+	left: 190px;
+	top: 20px;
 	color: #323232;
 	font-size: 18px;
 }
 #special01_describe{
 	position: absolute;
-	left: 428px;
-	top: 645px;
+	left: 220px;
+	top: 50px;
 	color: #414141;
 	font-size: 13px;
 }
 #special01_money_symbol{
 	position: absolute;
-	left: 450px;
-	top: 690px;
+	left: 250px;
+	top: 110px;
 	color: #9f0404;
 	font-size:15px;
 }
 #special01_money_num{
 	position: absolute;
-	left: 457px;
-	top: 671px;
+	left: 257px;
+	top: 100px;
 	color: #9f0404;
 	font-size:25px;
 }
 #special01_once{
 	text-decoration: line-through;
 	position: absolute;
-	left: 510px;
-	top: 690px;
+	left: 330px;
+	top: 110px;
 	font-size: 15px;
 	color: #373535;
 }
@@ -234,57 +186,62 @@ body{
 	font-size: 15px;
 	border: none;
 	position: absolute;
-	left: 435px;
-	top: 740px;
+	left: 270px;
+	top: 140px;
 }
 
-
+#special_2{
+	position: absolute;
+	top: 100px;
+	left: 550px;
+	
+	width: 410px;
+	height: 190px;
+}
 #hr2{
 	position: absolute;
-	left: 650px;
-	top: 600px;
+	left: 0px;
+	top: 0px;
 }
-
 #special02{
 	position: absolute;
-	left: 650px;
-	top: 602px;
-	width: 31%;
+	left: 0px;
+	top: 2px;
+	width: 100%;
 }
 #special02_name{
 	position: absolute;
-	left: 805px;
-	top: 610px;
+	left: 190px;
+	top: 20px;
 	color: #323232;
 	font-size: 18px;
 }
-
 #special02_describe{
 	position: absolute;
-	left: 825px;
-	top: 645px;
+	left: 220px;
+	top: 50px;
 	color: #414141;
 	font-size: 13px;
 }
 #special02_money_symbol{
 	position: absolute;
-	left: 910px;
-	top: 690px;
+	left: 250px;
+	top: 110px;
 	color: #9f0404;
 	font-size:15px;
 }
 #special02_money_num{
 	position: absolute;
-	left: 920px;
-	top: 671px;
+	left: 257px;
+	top: 100px;
 	color: #9f0404;
 	font-size:25px;
 }
 #special02_once{
 	text-decoration: line-through;
 	position: absolute;
-	left: 980px;
-	top: 690px;
+	left: 330px;
+	top: 110px;
 	font-size: 15px;
 	color: #373535;
 }
@@ -296,54 +253,62 @@ body{
 	font-size: 15px;
 	border: none;
 	position: absolute;
-	left: 895px;
-	top: 740px;
+	left: 270px;
+	top: 140px;
 }
 
+#special_3{
+	position: absolute;
+	top: 290px;
+	left: 40px;
+	
+	width: 410px;
+	height: 190px;
+}
 #hr3{
 	position: absolute;
-	left: 190px;
-	top: 785px;
+	left: 0px;
+	top: 0px;
 }
 #special03{
 	position: absolute;
-	left: 190px;
-	top: 788px;
-	width: 31%;
+	left: 0px;
+	top: 2px;
+	width: 100%;
 }
 #special03_name{
 	position: absolute;
-	left: 350px;
-	top: 790px;
+	left: 190px;
+	top: 20px;
 	color: #323232;
 	font-size: 18px;
 }
 #special03_describe{
 	position: absolute;
-	left: 428px;
-	top: 825px;
+	left: 220px;
+	top: 50px;
 	color: #414141;
 	font-size: 13px;
 }
 #special03_money_symbol{
 	position: absolute;
-	left: 450px;
-	top: 860px;
+	left: 250px;
+	top: 110px;
 	color: #9f0404;
 	font-size:15px;
 }
 #special03_money_num{
 	position: absolute;
-	left: 460px;
-	top: 841px;
+	left: 257px;
+	top: 100px;
 	color: #9f0404;
 	font-size:25px;
 }
 #special03_once{
 	text-decoration: line-through;
 	position: absolute;
-	left: 510px;
-	top: 860px;
+	left: 330px;
+	top: 110px;
 	font-size: 15px;
 	color: #373535;
 }
@@ -355,56 +320,61 @@ body{
 	font-size: 15px;
 	border: none;
 	position: absolute;
-	left: 435px;
-	top: 910px;
+	left: 270px;
+	top: 140px;
 }
-
+#special_4{
+	position: absolute;
+	top: 290px;
+	left: 550px;
+	
+	width: 410px;
+	height: 190px;
+}
 #hr4{
 	position: absolute;
-	left: 650px;
-	top: 785px;
+	left: 0px;
+	top: 0px;
 }
-
 #special04{
 	position: absolute;
-	left: 650px;
-	top: 788px;
-	width: 31%;
+	left: 0px;
+	top: 2px;
+	width: 100%;
 }
 #special04_name{
 	position: absolute;
-	left: 810px;
-	top: 790px;
+	left: 190px;
+	top: 20px;
 	color: #323232;
 	font-size: 18px;
 }
-
 #special04_describe{
 	position: absolute;
-	left: 850px;
-	top: 825px;
+	left: 220px;
+	top: 50px;
 	color: #414141;
 	font-size: 13px;
 }
 #special04_money_symbol{
 	position: absolute;
-	left: 910px;
-	top: 860px;
+	left: 250px;
+	top: 110px;
 	color: #9f0404;
 	font-size:15px;
 }
 #special04_money_num{
 	position: absolute;
-	left: 920px;
-	top: 841px;
+	left: 257px;
+	top: 100px;
 	color: #9f0404;
 	font-size:25px;
 }
 #special04_once{
 	text-decoration: line-through;
 	position: absolute;
-	left: 980px;
-	top: 860px;
+	left: 330px;
+	top: 110px;
 	font-size: 15px;
 	color: #373535;
 }
@@ -416,54 +386,61 @@ body{
 	font-size: 15px;
 	border: none;
 	position: absolute;
-	left: 895px;
-	top: 910px;
+	left: 270px;
+	top: 140px;
 }
-
+#special_5{
+	position: absolute;
+	top: 480px;
+	left: 40px;
+	
+	width: 410px;
+	height: 190px;
+}
 #hr5{
 	position: absolute;
-	left: 190px;
-	top: 970px;
+	left: 0px;
+	top: 0px;
 }
 #special05{
 	position: absolute;
-	left: 190px;
-	top: 973px;
-	width: 31%;
+	left: 0px;
+	top: 2px;
+	width: 100%;
 }
 #special05_name{
 	position: absolute;
-	left: 395px;
-	top: 975px;
+	left: 190px;
+	top: 20px;
 	color: #323232;
 	font-size: 18px;
 }
 #special05_describe{
 	position: absolute;
-	left: 480px;
-	top: 1010px;
+	left: 220px;
+	top: 50px;
 	color: #414141;
 	font-size: 13px;
 }
 #special05_money_symbol{
 	position: absolute;
-	left: 450px;
-	top: 1045px;
+	left: 250px;
+	top: 110px;
 	color: #9f0404;
 	font-size:15px;
 }
 #special05_money_num{
 	position: absolute;
-	left: 460px;
-	top: 1026px;
+	left: 257px;
+	top: 100px;
 	color: #9f0404;
 	font-size:25px;
 }
 #special05_once{
 	text-decoration: line-through;
 	position: absolute;
-	left: 510px;
-	top: 1045px;
+	left: 330px;
+	top: 110px;
 	font-size: 15px;
 	color: #373535;
 }
@@ -475,56 +452,61 @@ body{
 	font-size: 15px;
 	border: none;
 	position: absolute;
-	left: 435px;
-	top: 1095px;
+	left: 270px;
+	top: 140px;
 }
-
+#special_6{
+	position: absolute;
+	top: 480px;
+	left: 550px;
+	
+	width: 410px;
+	height: 190px;
+}
 #hr6{
 	position: absolute;
-	left: 650px;
-	top: 970px;
+	left: 0px;
+	top: 0px;
 }
-
 #special06{
 	position: absolute;
-	left: 650px;
-	top: 973px;
-	width: 31%;
+	left: 0px;
+	top: 2px;
+	width: 100%;
 }
 #special06_name{
 	position: absolute;
-	left: 840px;
-	top: 975px;
+	left: 190px;
+	top: 20px;
 	color: #323232;
 	font-size: 18px;
 }
-
 #special06_describe{
 	position: absolute;
-	left: 860px;
-	top: 1010px;
+	left: 220px;
+	top: 50px;
 	color: #414141;
 	font-size: 13px;
 }
 #special06_money_symbol{
 	position: absolute;
-	left: 910px;
-	top: 1045px;
+	left: 250px;
+	top: 110px;
 	color: #9f0404;
 	font-size:15px;
 }
 #special06_money_num{
 	position: absolute;
-	left: 920px;
-	top: 1026px;
+	left: 257px;
+	top: 100px;
 	color: #9f0404;
 	font-size:25px;
 }
 #special06_once{
 	text-decoration: line-through;
 	position: absolute;
-	left: 980px;
-	top: 1045px;
+	left: 330px;
+	top: 110px;
 	font-size: 15px;
 	color: #373535;
 }
@@ -536,54 +518,61 @@ body{
 	font-size: 15px;
 	border: none;
 	position: absolute;
-	left: 895px;
-	top: 1095px;
+	left: 270px;
+	top: 140px;
 }
-
+#special_7{
+	position: absolute;
+	top: 670px;
+	left: 40px;
+	
+	width: 410px;
+	height: 190px;
+}
 #hr7{
 	position: absolute;
-	left: 190px;
-	top: 1155px;
+	left: 0px;
+	top: 0px;
 }
 #special07{
 	position: absolute;
-	left: 190px;
-	top: 1158px;
-	width: 31%;
+	left: 0px;
+	top: 2px;
+	width: 100%;
 }
 #special07_name{
 	position: absolute;
-	left: 395px;
-	top: 1160px;
+	left: 190px;
+	top: 20px;
 	color: #323232;
 	font-size: 18px;
 }
 #special07_describe{
 	position: absolute;
-	left: 430px;
-	top: 1195px;
+	left: 220px;
+	top: 50px;
 	color: #414141;
 	font-size: 13px;
 }
 #special07_money_symbol{
 	position: absolute;
-	left: 450px;
-	top: 1230px;
+	left: 250px;
+	top: 110px;
 	color: #9f0404;
 	font-size:15px;
 }
 #special07_money_num{
 	position: absolute;
-	left: 460px;
-	top: 1211px;
+	left: 257px;
+	top: 100px;
 	color: #9f0404;
 	font-size:25px;
 }
 #special07_once{
 	text-decoration: line-through;
 	position: absolute;
-	left: 510px;
-	top: 1230px;
+	left: 330px;
+	top: 110px;
 	font-size: 15px;
 	color: #373535;
 }
@@ -595,56 +584,61 @@ body{
 	font-size: 15px;
 	border: none;
 	position: absolute;
-	left: 435px;
-	top: 1280px;
+	left: 270px;
+	top: 140px;
 }
-
+#special_8{
+	position: absolute;
+	top: 670px;
+	left: 550px;
+	
+	width: 410px;
+	height: 190px;
+}
 #hr8{
 	position: absolute;
-	left: 650px;
-	top: 1155px;
+	left: 0px;
+	top: 0px;
 }
-
 #special08{
 	position: absolute;
-	left: 650px;
-	top: 1158px;
-	width: 31%;
+	left: 0px;
+	top: 2px;
+	width: 100%;
 }
 #special08_name{
 	position: absolute;
-	left: 800px;
-	top: 1160px;
+	left: 190px;
+	top: 20px;
 	color: #323232;
 	font-size: 18px;
 }
-
 #special08_describe{
 	position: absolute;
-	left: 820px;
-	top: 1195px;
+	left: 220px;
+	top: 50px;
 	color: #414141;
 	font-size: 13px;
 }
 #special08_money_symbol{
 	position: absolute;
-	left: 910px;
-	top: 1230px;
+	left: 250px;
+	top: 110px;
 	color: #9f0404;
 	font-size:15px;
 }
 #special08_money_num{
 	position: absolute;
-	left: 920px;
-	top: 1211px;
+	left: 257px;
+	top: 100px;
 	color: #9f0404;
 	font-size:25px;
 }
 #special08_once{
 	text-decoration: line-through;
 	position: absolute;
-	left: 980px;
-	top: 1230px;
+	left: 330px;
+	top: 110px;
 	font-size: 15px;
 	color: #373535;
 }
@@ -656,54 +650,61 @@ body{
 	font-size: 15px;
 	border: none;
 	position: absolute;
-	left: 895px;
-	top: 1280px;
+	left: 270px;
+	top: 140px;
 }
-
+#special_9{
+	position: absolute;
+	top: 860px;
+	left: 40px;
+	
+	width: 410px;
+	height: 190px;
+}
 #hr9{
 	position: absolute;
-	left: 190px;
-	top: 1340px;
+	left: 0px;
+	top: 0px;
 }
 #special09{
 	position: absolute;
-	left: 190px;
-	top: 1343px;
-	width: 31%;
+	left: 0px;
+	top: 2px;
+	width: 100%;
 }
 #special09_name{
 	position: absolute;
-	left: 350px;
-	top: 1345px;
+	left: 190px;
+	top: 20px;
 	color: #323232;
 	font-size: 18px;
 }
 #special09_describe{
 	position: absolute;
-	left: 430px;
-	top: 1380px;
+	left: 220px;
+	top: 50px;
 	color: #414141;
 	font-size: 13px;
 }
 #special09_money_symbol{
 	position: absolute;
-	left: 450px;
-	top: 1415px;
+	left: 250px;
+	top: 110px;
 	color: #9f0404;
 	font-size:15px;
 }
 #special09_money_num{
 	position: absolute;
-	left: 460px;
-	top: 1396px;
+	left: 257px;
+	top: 100px;
 	color: #9f0404;
 	font-size:25px;
 }
 #special09_once{
 	text-decoration: line-through;
 	position: absolute;
-	left: 510px;
-	top: 1415px;
+	left: 330px;
+	top: 110px;
 	font-size: 15px;
 	color: #373535;
 }
@@ -715,55 +716,61 @@ body{
 	font-size: 15px;
 	border: none;
 	position: absolute;
-	left: 435px;
-	top: 1465px;
+	left: 270px;
+	top: 140px;
+}
+#special_10{
+	position: absolute;
+	top: 860px;
+	left: 550px;
+	
+	width: 410px;
+	height: 190px;
 }
 #hr10{
 	position: absolute;
-	left: 650px;
-	top: 1340px;
+	left: 0px;
+	top: 0px;
 }
-
 #special10{
 	position: absolute;
-	left: 650px;
-	top: 1343px;
-	width: 31%;
+	left: 0px;
+	top: 2px;
+	width: 100%;
 }
 #special10_name{
 	position: absolute;
-	left: 810px;
-	top: 1345px;
+	left: 190px;
+	top: 20px;
 	color: #323232;
 	font-size: 18px;
 }
-
 #special10_describe{
 	position: absolute;
-	left: 850px;
-	top: 1380px;
+	left: 220px;
+	top: 50px;
 	color: #414141;
 	font-size: 13px;
 }
 #special10_money_symbol{
 	position: absolute;
-	left: 910px;
-	top: 1415px;
+	left: 250px;
+	top: 110px;
 	color: #9f0404;
 	font-size:15px;
 }
 #special10_money_num{
 	position: absolute;
-	left: 920px;
-	top: 1396px;
+	left: 257px;
+	top: 100px;
 	color: #9f0404;
 	font-size:25px;
 }
 #special10_once{
 	text-decoration: line-through;
 	position: absolute;
-	left: 980px;
-	top: 1415px;
+	left: 330px;
+	top: 110px;
 	font-size: 15px;
 	color: #373535;
 }
@@ -775,54 +782,61 @@ body{
 	font-size: 15px;
 	border: none;
 	position: absolute;
-	left: 895px;
-	top: 1465px;
+	left: 270px;
+	top: 140px;
 }
-
+#special_11{
+	position: absolute;
+	top: 1050px;
+	left: 40px;
+	
+	width: 410px;
+	height: 190px;
+}
 #hr11{
 	position: absolute;
-	left: 190px;
-	top: 1525px;
+	left: 0px;
+	top: 0px;
 }
 #special11{
 	position: absolute;
-	left: 190px;
-	top: 1528px;
-	width: 31%;
+	left: 0px;
+	top: 2px;
+	width: 100%;
 }
 #special11_name{
 	position: absolute;
-	left: 390px;
-	top: 1530px;
+	left: 190px;
+	top: 20px;
 	color: #323232;
 	font-size: 18px;
 }
 #special11_describe{
 	position: absolute;
-	left: 480px;
-	top: 1565px;
+	left: 220px;
+	top: 50px;
 	color: #414141;
 	font-size: 13px;
 }
 #special11_money_symbol{
 	position: absolute;
-	left: 450px;
-	top: 1600px;
+	left: 250px;
+	top: 110px;
 	color: #9f0404;
 	font-size:15px;
 }
 #special11_money_num{
 	position: absolute;
-	left: 460px;
-	top: 1581px;
+	left: 257px;
+	top: 100px;
 	color: #9f0404;
 	font-size:25px;
 }
 #special11_once{
 	text-decoration: line-through;
 	position: absolute;
-	left: 510px;
-	top: 1600px;
+	left: 330px;
+	top: 110px;
 	font-size: 15px;
 	color: #373535;
 }
@@ -834,55 +848,61 @@ body{
 	font-size: 15px;
 	border: none;
 	position: absolute;
-	left: 435px;
-	top: 1650px;
+	left: 270px;
+	top: 140px;
+}
+#special_12{
+	position: absolute;
+	top: 1050px;
+	left: 550px;
+	
+	width: 410px;
+	height: 190px;
 }
 #hr12{
 	position: absolute;
-	left: 650px;
-	top: 1525px;
+	left: 0px;
+	top: 0px;
 }
-
 #special12{
 	position: absolute;
-	left: 650px;
-	top: 1528px;
-	width: 31%;
+	left: 0px;
+	top: 2px;
+	width: 100%;
 }
 #special12_name{
 	position: absolute;
-	left: 840px;
-	top: 1530px;
+	left: 190px;
+	top: 20px;
 	color: #323232;
 	font-size: 18px;
 }
-
 #special12_describe{
 	position: absolute;
-	left: 860px;
-	top: 1565px;
+	left: 220px;
+	top: 50px;
 	color: #414141;
 	font-size: 13px;
 }
 #special12_money_symbol{
 	position: absolute;
-	left: 910px;
-	top: 1600px;
+	left: 250px;
+	top: 110px;
 	color: #9f0404;
 	font-size:15px;
 }
 #special12_money_num{
 	position: absolute;
-	left: 920px;
-	top: 1581px;
+	left: 257px;
+	top: 100px;
 	color: #9f0404;
 	font-size:25px;
 }
 #special12_once{
 	text-decoration: line-through;
 	position: absolute;
-	left: 980px;
-	top: 1600px;
+	left: 330px;
+	top: 110px;
 	font-size: 15px;
 	color: #373535;
 }
@@ -894,37 +914,37 @@ body{
 	font-size: 15px;
 	border: none;
 	position: absolute;
-	left: 895px;
-	top: 1650px;
+	left: 270px;
+	top: 140px;
 }
-
 /*每日优选*/
 .daily_optimal{
-	width: 100%;
+	width: 1010px;
 	height: 1880px;
-	
+	margin: 0px auto;
 	position: relative;
+	
 }
 .daily_optimal_title{
 	color: #86171e;
 	font-size: 25px;
 	position: absolute;
-	left: 485px;
-	top: -20px;
+	left: 340px;
+	top: 40px;
 }
 #opmital1{
 	position: absolute;
-	left: 190px;
+	left: 20px;
 	top: 120px;
-	width: 35%;
+	width: 45%;
 }
 #optimal1_describe{
 	width: 450px;
 	height: 408px;
 	background-color: #eceaed;
 	position: absolute;
-	left: 640px;
-	top: 120px;
+	left: 475px;
+	top: 123px;
 	box-shadow: 0 2px 16px grey, 0 0 1px grey, 0 0 1px grey;
 }
 #optimal1_name{
@@ -1006,17 +1026,17 @@ body{
 
 #opmital2{
 	position: absolute;
-	left: 190px;
-	top: 560px;
-	width: 35%;
+	left: 20px;
+	top: 565px;
+	width: 45%;
 }
 #optimal2_describe{
 	width: 450px;
 	height: 408px;
 	background-color: #eceaed;
 	position: absolute;
-	left: 640px;
-	top: 560px;
+	left: 475px;
+	top: 568px;
 	box-shadow: 0 2px 16px grey, 0 0 1px grey, 0 0 1px grey;
 }
 #optimal2_name{
@@ -1098,17 +1118,17 @@ body{
 
 #opmital3{
 	position: absolute;
-	left: 190px;
-	top: 1000px;
-	width: 35%;
+	left: 20px;
+	top: 1010px;
+	width: 45%;
 }
 #optimal3_describe{
 	width: 450px;
 	height: 408px;
 	background-color: #eceaed;
 	position: absolute;
-	left: 640px;
-	top: 1000px;
+	left: 475px;
+	top: 1013px;
 	box-shadow: 0 2px 16px grey, 0 0 1px grey, 0 0 1px grey;
 }
 #optimal3_name{
@@ -1190,17 +1210,17 @@ body{
 
 #opmital4{
 	position: absolute;
-	left: 190px;
-	top: 1440px;
-	width: 35%;
+	left: 20px;
+	top: 1455px;
+	width: 45%;
 }
 #optimal4_describe{
 	width: 450px;
 	height: 408px;
 	background-color: #eceaed;
 	position: absolute;
-	left: 640px;
-	top: 1440px;
+	left: 475px;
+	top: 1458px;
 	box-shadow: 0 2px 16px grey, 0 0 1px grey, 0 0 1px grey;
 }
 #optimal4_name{
@@ -1282,18 +1302,19 @@ body{
 
 /*销量排行榜*/
 .list{
-	width: 100%;
-	height:2100px;
-	
+	width: 1010px;
+	height:2300px;
+	margin: 0 auto;
 	position: relative;
+	
 }
 #salelist{
 	background-color: #343434;
 	width:200px ;
 	height: 50px;
 	position:absolute;
-	left: 440px;
-	top:30px;
+	left: 275px;
+	top:50px;
 	border: 2px solid #343434;
 	color: white;
 	font-size: 25px;
@@ -1303,18 +1324,18 @@ body{
 	width:200px ;
 	height: 50px;
 	position:absolute;
-	left: 640px;
-	top:30px;
+	left: 475px;
+	top:50px;
 	border: 2px solid #343434;
 	color: #343434;
 	font-size: 25px;
 }
 .hr_top{
-	width: 900px;
+	width: 1010px;
 	border-bottom: 4px solid #343434;
 	position: absolute;
-	left: 190px;
-	top:78px;
+	
+	top:98px;
 }
 
 .sale1{
@@ -1322,20 +1343,20 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 130px;
-	left: 190px;
+	top: 160px;
+	left: 40px;
 }
 #sale1_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale1_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -1344,7 +1365,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale1_money_num{
@@ -1352,7 +1373,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale1_buy{
@@ -1363,7 +1384,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -1372,20 +1393,20 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 130px;
-	left: 420px;
+	top: 160px;
+	left: 275px;
 }
 #sale2_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale2_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -1394,7 +1415,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale2_money_num{
@@ -1402,7 +1423,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale2_buy{
@@ -1413,7 +1434,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -1422,20 +1443,20 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 130px;
-	left: 650px;
+	top: 160px;
+	left: 510px;
 }
 #sale3_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale3_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -1444,7 +1465,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale3_money_num{
@@ -1452,7 +1473,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale3_buy{
@@ -1463,31 +1484,30 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
-
 
 .sale4{
 	border: 2px solid #eceaed;
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 130px;
-	left: 880px;
+	top: 160px;
+	left: 745px;
 }
 
 #sale4_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale4_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -1496,7 +1516,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale4_money_num{
@@ -1504,7 +1524,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale4_buy{
@@ -1515,7 +1535,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -1525,20 +1545,20 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 450px;
-	left: 190px;
+	top: 510px;
+	left: 40px;
 }
 #sale5_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale5_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -1547,7 +1567,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale5_money_num{
@@ -1555,7 +1575,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale5_buy{
@@ -1566,7 +1586,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -1575,20 +1595,20 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 450px;
-	left: 420px;
+	top: 510px;
+	left: 275px;
 }
 #sale6_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale6_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -1597,7 +1617,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale6_money_num{
@@ -1605,7 +1625,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale6_buy{
@@ -1616,7 +1636,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -1625,20 +1645,20 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 450px;
-	left: 650px;
+	top: 510px;
+	left: 510px;
 }
 #sale7_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale7_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -1647,7 +1667,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale7_money_num{
@@ -1655,7 +1675,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale7_buy{
@@ -1666,7 +1686,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -1676,21 +1696,21 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 450px;
-	left: 880px;
+	top: 510px;
+	left: 745px;
 }
 
 #sale8_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale8_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -1699,7 +1719,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale8_money_num{
@@ -1707,7 +1727,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale8_buy{
@@ -1718,7 +1738,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -1728,20 +1748,20 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 770px;
-	left: 190px;
+	top: 860px;
+	left: 40px;
 }
 #sale9_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale9_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -1750,7 +1770,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale9_money_num{
@@ -1758,7 +1778,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale9_buy{
@@ -1769,7 +1789,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -1778,20 +1798,20 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 770px;
-	left: 420px;
+	top: 860px;
+	left: 275px;
 }
 #sale10_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale10_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -1800,7 +1820,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale10_money_num{
@@ -1808,7 +1828,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale10_buy{
@@ -1819,7 +1839,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -1828,20 +1848,20 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 770px;
-	left: 650px;
+	top: 860px;
+	left: 510px;
 }
 #sale11_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale11_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -1850,7 +1870,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale11_money_num{
@@ -1858,7 +1878,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale11_buy{
@@ -1869,7 +1889,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -1879,21 +1899,21 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 770px;
-	left: 880px;
+	top: 860px;
+	left: 745px;
 }
 
 #sale12_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale12_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -1902,7 +1922,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale12_money_num{
@@ -1910,7 +1930,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale12_buy{
@@ -1921,7 +1941,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -1930,20 +1950,20 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 1090px;
-	left: 190px;
+	top: 1210px;
+	left: 40px;
 }
 #sale13_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale13_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -1952,7 +1972,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale13_money_num{
@@ -1960,7 +1980,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale13_buy{
@@ -1971,7 +1991,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -1980,20 +2000,20 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 1090px;
-	left: 420px;
+	top: 1210px;
+	left: 275px;
 }
 #sale14_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale14_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -2002,7 +2022,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale14_money_num{
@@ -2010,7 +2030,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale14_buy{
@@ -2021,7 +2041,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -2030,20 +2050,20 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 1090px;
-	left: 650px;
+	top: 1210px;
+	left: 510px;
 }
 #sale15_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale15_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -2052,7 +2072,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale15_money_num{
@@ -2060,7 +2080,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale15_buy{
@@ -2071,7 +2091,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -2081,21 +2101,21 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 1090px;
-	left: 880px;
+	top: 1210px;
+	left: 745px;
 }
 
 #sale16_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale16_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -2104,7 +2124,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale16_money_num{
@@ -2112,7 +2132,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale16_buy{
@@ -2123,7 +2143,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -2132,20 +2152,20 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 1410px;
-	left: 190px;
+	top: 1560px;
+	left: 40px;
 }
 #sale17_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale17_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -2154,7 +2174,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale17_money_num{
@@ -2162,7 +2182,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale17_buy{
@@ -2173,7 +2193,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -2182,20 +2202,20 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 1410px;
-	left: 420px;
+	top: 1560px;
+	left: 275px;
 }
 #sale18_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale18_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -2204,7 +2224,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale18_money_num{
@@ -2212,7 +2232,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale18_buy{
@@ -2223,7 +2243,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -2232,20 +2252,20 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 1410px;
-	left: 650px;
+	top: 1560px;
+	left: 510px;
 }
 #sale19_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale19_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -2254,7 +2274,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale19_money_num{
@@ -2262,7 +2282,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale19_buy{
@@ -2273,7 +2293,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -2283,21 +2303,21 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 1410px;
-	left: 880px;
+	top: 1560px;
+	left: 745px;
 }
 
 #sale20_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale20_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -2306,7 +2326,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale20_money_num{
@@ -2314,7 +2334,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale20_buy{
@@ -2325,7 +2345,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -2334,20 +2354,20 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 1730px;
-	left: 190px;
+	top: 1910px;
+	left: 40px;
 }
 #sale21_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale21_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -2356,7 +2376,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale21_money_num{
@@ -2364,7 +2384,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale21_buy{
@@ -2375,7 +2395,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -2384,20 +2404,20 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 1730px;
-	left: 420px;
+	top: 1910px;
+	left: 275px;
 }
 #sale22_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale22_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -2406,7 +2426,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale22_money_num{
@@ -2414,7 +2434,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale22_buy{
@@ -2425,7 +2445,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -2434,20 +2454,20 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 1730px;
-	left: 650px;
+	top: 1910px;
+	left: 510px;
 }
 #sale23_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale23_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -2456,7 +2476,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale23_money_num{
@@ -2464,7 +2484,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale23_buy{
@@ -2475,7 +2495,7 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 
@@ -2485,21 +2505,21 @@ body{
 	width: 216px;
 	height: 306px;
 	position: absolute;
-	top: 1730px;
-	left: 880px;
+	top: 1910px;
+	left: 745px;
 }
 
 #sale24_name{
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 215px;
 	color: #3a3a3a;
 	font-size: 12px;
 }
 #sale24_descript{
 	position: absolute;
 	left: 10px;
-	top: 235px;
+	top: 240px;
 	color: #7f7e7e;
 	font-size: 12px;
 }
@@ -2508,7 +2528,7 @@ body{
 	font-size: 12px;
 	position: absolute;
 	left: 10px;
-	top: 270px;
+	top: 275px;
 
 }
 #sale24_money_num{
@@ -2516,7 +2536,7 @@ body{
 	font-size: 30px;
 	position: absolute;
 	left: 20px;
-	top: 237px;
+	top: 260px;
 
 }
 #sale24_buy{
@@ -2527,27 +2547,27 @@ body{
 	font-size: 13px;
 	position: absolute;
 	left: 115px;
-	top: 265px;
+	top: 270px;
 	border: none;
 }
 .hr_bottom{
 	width: 100%;
 	border-bottom: 3px solid #838383;
 	position: absolute;
-	top: 2090px;
+	top: 2270px;
 }
 
 /*换退规则*/
 
 .change{
-	width: 100%;
+	width: 1010px;
 	height: 400px;
 	position: relative;
-	
+	margin: 0 auto;
 }
 .zheng_img{
 	position: absolute;
-	left: 250px;
+	left: 80px;
 	top: 30px;
 	width: 4%;
 }
@@ -2555,14 +2575,14 @@ body{
 	color: #373737;
 	font-size: 14px;
 	position: absolute;
-	left: 325px;
+	left: 155px;
 	top: 5px;
 	line-height: 200%;
 }
 
 .huan_img{
 	position: absolute;
-	left: 250px;
+	left: 80px;
 	top: 160px;
 	width: 4%;
 }
@@ -2570,14 +2590,14 @@ body{
 	color: #373737;
 	font-size: 14px;
 	position: absolute;
-	left: 325px;
+	left: 155px;
 	top: 135px;
 	line-height: 200%;
 }
 
 .tui_img{
 	position: absolute;
-	left: 250px;
+	left: 80px;
 	top: 290px;
 	width: 4%;
 }
@@ -2585,152 +2605,9 @@ body{
 	color: #373737;
 	font-size: 14px;
 	position: absolute;
-	left: 325px;
+	left: 155px;
 	top: 265px;
 	line-height: 200%;
 }
 
 
-/*底部*/
-#bottom{
-	position: relative;
-	width: 1280px;
-	height: 230px;
-	background-color: #d41a39;
-}
-.service_guarantee{
-	position: absolute;
-	left: 130px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-#service_list{
-	position: absolute;
-	left: 90px;
-	top: 35px;
-}
-#service li{
-	list-style: none;
-	color: white;
-	font-size: 10px;
-	margin-top: 10px;
-}
-.use_help{
-	position: absolute;
-	left: 270px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-#help_list{
-	position: absolute;
-	left: 230px;
-	top: 35px;
-}
-#help li{
-	list-style: none;
-	color: white;
-	font-size: 10px;
-	margin-top: 10px;
-}
-.pay_style{
-	position: absolute;
-	left: 410px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-#pay_list{
-	position: absolute;
-	left: 370px;
-	top: 35px;
-}
-#pay li{
-	list-style: none;
-	color: white;
-	font-size: 10px;
-	margin-top: 10px;
-}
-.distribution_style{
-	position: absolute;
-	left: 560px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-#distribution_list{
-	position: absolute;
-	left: 510px;
-	top: 35px;
-}
-#distribution li{
-	list-style: none;
-	color: white;
-	font-size: 10px;
-	margin-top: 10px;
-}
-.after_sales_service{
-	position: absolute;
-	left: 690px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-#after_sales_list{
-	position: absolute;
-	left: 650px;
-	top: 35px;
-}
-#after_sales li{
-	list-style: none;
-	color: white;
-	font-size: 10px;
-	margin-top: 10px;
-}
-.phone_client{
-	position: absolute;
-	left: 830px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-.phone_ewm{
-	position: absolute;
-	left: 837px;
-	top: 50px;
-}
-.scan{
-	position: absolute;
-	left: 843px;
-	top: 155px;
-	font-size: 13px;
-	color: white;
-}
-.official_weixin{
-	position: absolute;
-	left: 1040px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-.weixin_ewm{
-	position: absolute;
-	left: 1020px;
-	top: 49px;
-}
-.official_scan{
-	position: absolute;
-	left: 1030px;
-	top: 155px;
-	font-size: 13px;
-	color: white;
-}
-.statement{
-	position: absolute;
-	top: 180px;
-	left: 180px;
-	color: white;
-	font-size: 8px;
-
-}
