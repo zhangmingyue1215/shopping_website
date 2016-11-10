@@ -1,85 +1,21 @@
 
 
-/*购物车详情*/
-.statement{
-	width: 1010px;
-	height: 128px;
-	position: relative;
-	margin: 0px auto;
-	
-}
 
-.logo{
-	position: absolute;
-	left: 0px;
-	top: 46px;
-}
-.progress{
-	position: absolute;
-	left: 630px;
-	top: 70px;
-}
-.mycar{
-	color: #d41a39;
-	font-size: 12px;
-	position: absolute;
-	left: 605px;
-	top: 85px;
-}
-.confirm_information{
-	color: #9c9b9b;
-	font-size: 12px;
-	position: absolute;
-	top: 85px;
-	left: 690px;
-}
-.confirm_pay{
-	color: #9c9b9b;
-	font-size: 12px;
-	position: absolute;
-	top: 85px;
-	left: 782px;	
-}
-.choose_style{
-	color: #9c9b9b;
-	font-size: 12px;
-	position: absolute;
-	top: 85px;
-	left: 880px;	
-}
-.welcome_user{
-	color: #4f4f4f;
-	font-size: 12px;
-	position: absolute;
-	top: 10px;
-	left: 835px;	
-}
-#username{
-	position: absolute;
-	left: 885px;
-	top: 10px;
-	font-size: 12px;
-	color: #d41a39;
-}
-#exit{
-	position: absolute;
-	left: 955px;
-	top: 10px;
-	font-size: 12px;
-	color: #4f4f4f;
-}
-.hrhr{
-	border: 4px solid #bebebe;
-	width: 100%;
-	position: relative;
-	margin: 0 auto;
-}
+
+
+
+ 
+
+
+
+
+
 .shoppingcar{
 	width: 1010px;
 	height: 1030px;
 	margin: 0 auto;
 	position: relative;
-	
+	background-color: #f1f1f1;
 }
 .allgoods{
 	position: absolute;
@@ -370,6 +306,7 @@
 	color: #5e5e5e;
 	font-size: 12px;
 }
+
 /*最近浏览*/
 .recent_see{
 	position: absolute;
@@ -430,6 +367,7 @@
 	top: 220px;
 
 }
+
 .sale2{
 	border: 2px solid #eceaed;
 	width: 200px;
@@ -522,6 +460,7 @@
 	top: 220px;
 
 }
+
 .sale4{
 	border: 2px solid #eceaed;
 	width: 200px;
@@ -568,3 +507,161 @@
 	top: 220px;
 
 }
+
+
+/*底部*/
+#bottom{
+	position: relative;
+	width: 100%px;
+	height: 230px;
+	background-color: #d41a39;
+}
+.service_guarantee{
+	position: absolute;
+	left: 130px;
+	top: 10px;
+	color: white;
+	font-size: 15px;
+}
+#service_list{
+	position: absolute;
+	left: 90px;
+	top: 35px;
+}
+#service li{
+	list-style: none;
+	color: white;
+	font-size: 10px;
+	margin-top: 10px;
+}
+.use_help{
+	position: absolute;
+	left: 270px;
+	top: 10px;
+	color: white;
+	font-size: 15px;
+}
+#help_list{
+	position: absolute;
+	left: 230px;
+	top: 35px;
+}
+#help li{
+	list-style: none;
+	color: white;
+	font-size: 10px;
+	margin-top: 10px;
+}
+.pay_style{
+	position: absolute;
+	left: 410px;
+	top: 10px;
+	color: white;
+	font-size: 15px;
+}
+#pay_list{
+	position: absolute;
+	left: 370px;
+	top: 35px;
+}
+#pay li{
+	list-style: none;
+	color: white;
+	font-size: 10px;
+	margin-top: 10px;
+}
+.distribution_style{
+	position: absolute;
+	left: 560px;
+	top: 10px;
+	color: white;
+	font-size: 15px;
+}
+#distribution_list{
+	position: absolute;
+	left: 510px;
+	top: 35px;
+}
+#distribution li{
+	list-style: none;
+	color: white;
+	font-size: 10px;
+	margin-top: 10px;
+}
+.after_sales_service{
+	position: absolute;
+	left: 690px;
+	top: 10px;
+	color: white;
+	font-size: 15px;
+}
+#after_sales_list{
+	position: absolute;
+	left: 650px;
+	top: 35px;
+}
+#after_sales li{
+	list-style: none;
+	color: white;
+	font-size: 10px;
+	margin-top: 10px;
+}
+.phone_client{
+	position: absolute;
+	left: 830px;
+	top: 10px;
+	color: white;
+	font-size: 15px;
+}
+.phone_ewm{
+	position: absolute;
+	left: 837px;
+	top: 50px;
+}
+.scan{
+	position: absolute;
+	left: 843px;
+	top: 155px;
+	font-size: 13px;
+	color: white;
+}
+.official_weixin{
+	position: absolute;
+	left: 1040px;
+	top: 10px;
+	color: white;
+	font-size: 15px;
+}
+.weixin_ewm{
+	position: absolute;
+	left: 1020px;
+	top: 49px;
+}
+.official_scan{
+	position: absolute;
+	left: 1030px;
+	top: 155px;
+	font-size: 13px;
+	color: white;
+}
+.statement{
+	position: absolute;
+	top: 180px;
+	left: 180px;
+	color: white;
+	font-size: 8px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

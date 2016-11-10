@@ -3,31 +3,31 @@
 <head>
 	<meta charset="utf-8">
 	<title>购物车</title>
+	<link rel="stylesheet" type="text/css" href="../base.css">
 	<link rel="stylesheet" type="text/css" href="shoppingcar.css">
 </head>
 <body>
 <!-- 顶部 -->
-	<div id="top">
-		<p class="welcome">欢迎来到美妆街!</p>                 
-		<p class="introduce">本网站商品全部为正品，支持防伪验证，支持官网查询，假一赔十!</p>	
-		<ul id="top_list">
-			<li><a href="../login/login.html">会员登录</a></li>
-			<li>|</li>
-			<li><a href="../reg/reg.html">注册会员</a></li>
-			<li>|</li>
-			<li><a href="#">订单查询</a></li>
-			<li>|</li>
-			<li id="drop-down">我的美妆&nbsp<img src="../images/3jiao.png">
-				<div id="user"><a href="../person_center/person_center.html">个人中心</a></div>
-			</li>
-			<li>|</li>
-			<li><a href="#">美妆收藏&nbsp<img src="../images/icon/favourite.png"></a></li>
-		</ul>
-
-	</div>
-	<!-- 购物车详情 -->
-	<div class="shoppingcar">
-		<a href="../index/index.html"><img src="../images/logo.png" class="logo"></a> 
+<div id="t_top">
+    <div id="top">
+        <span>欢迎来到美妆街！</span>
+        <span>本网站商品全部为正品，支持防伪码验证，支持官网查询，假一赔十！</span>
+        <div>
+            <a href="../login/login.html">会员登录</a> |
+            <a href="../reg/reg.html">注册会员</a> |
+            <a href="#">订单查询</a> |
+            <div>
+                <span>我的美妆</span>
+                <div></div>
+                <a class="personal" href="../person_center/personal.html">个人中心</a>
+            </div>
+            | <a href="#">美妆收藏<img src="../images/icon/favourite.png"> </a>
+        </div>
+    </div>
+</div>
+<!-- 购物车详情 -->
+	<div class="statement">
+		<a href="../index/index.html"><img src="../images/logo.png" class="logo" height="70px"></a> 
 		<img src="../images/01.png" class="progress">
 		<p class="mycar">我的购物车</p>
 		<p class="confirm_information">确认订单信息</p>
@@ -36,7 +36,9 @@
 		<p class="welcome_user">欢迎您：</p>
 		<p id="username">用户名</p>
 		<p id="exit">【退出】</p>
-		<div class="hrhr"></div>
+	</div>
+	<div class="hrhr"></div>
+	<div class="shoppingcar">
 		<p class="allgoods">全部商品</p>
 		<img src="../images/activity/activity_03.png" class="allgoods_hr">
 		<input type="checkbox" id="allselect1">
@@ -57,9 +59,12 @@
 				<li>小计</li>
 				<li>操作</li>
 			</ul>
-			<button id="btn_subtraction">-</button>
-			<input type="text" value="1" id="num_input">
-			<button id="btn_add">+</button>
+			<div class="number">
+				<button id="btn_subtraction">-</button>
+				<input type="text" value="1" id="num_input">
+				<button id="btn_add">+</button>
+			</div>
+			
 			<p id="shoppingcar_goods_single_money">¥39.90</p>
 			 <p id="shoppingcar_goods_total_money">¥39.90</p>
 			 <img src="../images/icon/delete.png" id="shoppingcar_delete_btn">
@@ -69,7 +74,7 @@
 		<p class="totalmoney">商品总金额:</p>
 		<p id="totalmoney_num">¥39.90</p>
 		<p class="totalmoney2">元</p>
-		<div class="jiesuanlan">
+		<div id="jiesuanlan">
 			<input type="checkbox" id="allselect3">
 			<p class="allselect3_p">全选</p>
 			<p class="alreaday-choose1">已选择</p>
@@ -78,13 +83,14 @@
 			<p class="gongji_money1">共计金额</p>
 			<p id="gongji_money">¥39.90</p>
 			<p class="gongji_money2">元</p>
-		</div>
-		<button id="gopay"><a href="../confirm/confirm.html">去结算</a> </button>
+			<button id="gopay"><a href="../confirm/confirm.html">去结算</a> </button>
 
+		</div>
+		
 		<p class="recent_see">最近浏览</p>
 		<img src="../images/activity/activity_03.png" class="recent_see_hr">
 		<div class="sale1"> 
-			<img src="../images/shouye/bang04.png" width="100%">
+			<img src="../images/shouye/bang04.png" >
 			<div class="background">
 				<p id="sale1_name">3CE明星显色口红/PA++</p>
 				<p id="sale1_descript">1548人已购买</p>
@@ -93,7 +99,7 @@
 			</div>	
 		</div>
 		<div class="sale2"> 
-			<img src="../images/shouye/bang04.png" width="100%">
+			<img src="../images/shouye/bang04.png" >
 			<div class="background2">
 				<p id="sale2_name">3CE明星显色口红/PA++</p>
 				<p id="sale2_descript">1548人已购买</p>
@@ -102,7 +108,7 @@
 			</div>	
 		</div>
 		<div class="sale3"> 
-			<img src="../images/shouye/bang04.png" width="100%">
+			<img src="../images/shouye/bang04.png" >
 			<div class="background3">
 				<p id="sale3_name">3CE明星显色口红/PA++</p>
 				<p id="sale3_descript">1548人已购买</p>
@@ -112,7 +118,7 @@
 		</div>
 
 		<div class="sale4"> 
-			<img src="../images/shouye/bang04.png" width="100%">
+			<img src="../images/shouye/bang04.png" width=>
 			<div class="background4">
 				<p id="sale4_name">3CE明星显色口红/PA++</p>
 				<p id="sale4_descript">1548人已购买</p>
@@ -120,65 +126,62 @@
 				<p id="sale4_money_num">129</p>
 			</div>	
 		</div>
-	</div>
-	<!-- 底部 -->
-	<div id="bottom">
-		<div id="service">
-			<p class="service_guarantee">服务保障</p>
-			<ul id="service_list">
-				<li>品牌真品防伪码</li>
-				<li>正品保证</li>
-				<li>30天无条件退货</li>
-				<li>7×24小时客服服务</li>
-			</ul>	
-		</div>
-		<div id="help">
-			<p class="use_help">使用帮助</p>
-			<ul id="help_list">
-				<li>新手指南</li>
-				<li>常见问题</li>
-				<li>帮助中心</li>
-				<li>用户协议</li>
-			</ul>	
-		</div>
-		<div id="pay">
-			<p class="pay_style">支付方式</p>
-			<ul id="pay_list">
-				<li>货到付款</li>
-				<li>在线支付</li>
-				<li>余额支付</li>
-				<li>现金券支付</li>
-			</ul>	
-		</div>
-		<div id="distribution">
-			<p class="distribution_style">配送方式</p>
-			<ul id="distribution_list">
-				<li>包邮政策</li>
-				<li>配送说明</li>
-				<li>运费说明</li>
-				<li>验货签收</li>
-			</ul>	
-		</div>
-		<div id="after_sales">
-			<p class="after_sales_service">售后服务</p>
-			<ul id="after_sales_list">
-				<li>正品承诺</li>
-				<li>售后咨询</li>
-				<li>退货政策</li>
-				<li>退货办理</li>
-			</ul>	
-		</div>
-		<div id="client">
-			<p class="phone_client">美妆街手机客户端</p>
-			<img src="../images/code_phone.png" class="phone_ewm">	
-			<p class="scan">扫描下载美妆街</br>&nbsp&nbsp&nbsp手机客户端</p>
-		</div>
-		<div id="weixin">
-			<p class="official_weixin">官方微信</p>
-			<img src="../images/code_weixin.png" class="weixin_ewm">	
-			<p class="official_scan">美妆街官方微信</p>
-		</div>
-		<div class="statement">COPYRIGHT © 2016-2019 北京XXXX传媒有限公司 美妆街.COM 保留一切权利。</div>
-	</div>
+	</div>  
+<!-- 底部 -->
+	<div id="f_footer">
+    <div id="footer">
+        <div>
+            <div>
+                <li><span>服务保障</span></li>
+                <li>品牌真品防伪码</li>
+                <li>正品保证</li>
+                <li>30天无条件退货</li>
+                <li>7×24小时客服服务</li>
+            </div>
+            <div>
+                <li><span>使用帮助</span></li>
+                <li>新手指南</li>
+                <li>常见问题</li>
+                <li>帮助中心</li>
+                <li>用户协议</li>
+            </div>
+            <div>
+                <li><span>支付方式</span></li>
+                <li>货到付款</li>
+                <li>在线支付</li>
+                <li>余额支付</li>
+                <li>现金券支付</li>
+            </div>
+            <div>
+                <li><span>配送方式</span></li>
+                <li>包邮政策</li>
+                <li>配送说明</li>
+                <li>运费说明</li>
+                <li>验货签收</li>
+            </div>
+            <div>
+                <li><span>售后服务</span></li>
+                <li>正品承诺</li>
+                <li>售后咨询</li>
+                <li>退货政策</li>
+                <li>退货办理</li>
+            </div>
+            <p>COPYRIGHT © 2016-2019 北京XXXX传媒有限公司 美妆街.COM 保留一切权利。</p>
+        </div>
+        <div class="phone">
+            <span>美妆街手机客户端</span>
+            <img src="../images/code_phone.png">
+            <p>扫描下载美妆街</p>
+            <p>手机客户端</p>
+        </div>
+        <div class="weixin">
+            <span>官方微信</span>
+            <img src="../images/code_weixin.png">
+            <p>美妆街官方微信</p>
+        </div>
+    </div>
+</div>
+
+	
 </body>
 </html>
