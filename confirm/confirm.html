@@ -3,54 +3,57 @@
 <head>
 	<meta charset="utf-8">
 	<title>确认地址</title>
+	<link rel="stylesheet" type="text/css" href="../base.css">
 	<link rel="stylesheet" type="text/css" href="cofirm_address.css">
 </head>
 <body>
 <!-- 顶部 -->
-	<div id="top">
-		<p class="welcome">欢迎来到美妆街!</p>                 
-		<p class="introduce">本网站商品全部为正品，支持防伪验证，支持官网查询，假一赔十!</p>	
-		<ul id="top_list">
-			<li><a href="../login/login.html">会员登录</a></li>
-			<li>|</li>
-			<li><a href="../reg/reg.html">注册会员</a></li>
-			<li>|</li>
-			<li><a href="#">订单查询</a></li>
-			<li>|</li>
-			<li id="drop-down">我的美妆&nbsp<img src="../images/3jiao.png">
-				<div id="user"><a href="../person_center/person_center.html">个人中心</a></div>
-			</li>
-			<li>|</li>
-			<li><a href="#">美妆收藏&nbsp<img src="../images/icon/favourite.png"></a></li>
-		</ul>
-
-	</div>
+<div id="t_top">
+    <div id="top">
+        <span>欢迎来到美妆街！</span>
+        <span>本网站商品全部为正品，支持防伪码验证，支持官网查询，假一赔十！</span>
+        <div>
+            <a href="../login/login.html">会员登录</a> |
+            <a href="../reg/reg.html">注册会员</a> |
+            <a href="#">订单查询</a> |
+            <div>
+                <span>我的美妆</span>
+                <div></div>
+                <a class="personal" href="../person_center/personal.html">个人中心</a>
+            </div>
+            | <a href="#">美妆收藏<img src="../images/icon/favourite.png"> </a>
+        </div>
+    </div>
+</div>
 <!-- 确认地址页面 -->
-	<div class="cofirm_address">
-		<a href="../index/index.html"><img src="../images/logo.png" class="logo"></a> 
+	<div class="statement">
+		<a href="../index/index.html"><img src="../images/logo.png" class="logo" height="70px"></a> 
 		<img src="../images/02.png" class="progress">
 		<p class="mycar">我的购物车</p>
 		<p class="confirm_information">确认订单信息</p>
-		<p class="confirm_pay">确认支付</p>
-		<p class="choose_style">选择付款方式</p>
+		<p class="confirm_pay">选择付款方式</p>
+		<p class="choose_style">完成交易</p>
 		<p class="welcome_user">欢迎您：</p>
 		<p id="username">用户名</p>
 		<p id="exit">【退出】</p>
-		<div class="hrhr"></div>
+	</div>
+	<div class="hrhr"></div>
+	<div class="cofirm_address">
+		
 		<p class="confirm_shipping_address">1、确认收货地址</p>
 		<img src="../images/activity/activity_03.png" class="allgoods_hr">
 		<div class="send_address">
 			<img src="../images/icon/local.png" class="local">
 			<p class="sendto">配送至</p>
-			<input type="radio" name="send" id="radio_address1">
-			<p id="address1">黑龙江省 哈尔滨市 南岗区 建设街51号  （XX收） 18564512352     默认地址</p>
 			<a href="#" id="modify">修改本地址</a>
 		</div>
+		<input type="radio" name="send" id="radio_address1">
+		<p id="address1">黑龙江省 哈尔滨市 南岗区 建设街51号  （XX收） 18564512352     默认地址</p>
 		<input type="radio" name="send" id="radio_address2">
 		<p id="address2">黑龙江省 哈尔滨市 道里区 正阳和街道 河洲街26号X单元XX楼XXX室  （XXX收） 18564512212     </p>
 		<button id="add_address"><img src="../images/icon/add.png">添加新地址</button>
 		<p class="send_time">2、送货时间</p>
-		<img src="../images/activity/activity_03.png" class="send_time_hr">s
+		<img src="../images/activity/activity_03.png" class="send_time_hr">
 		<div id="only_work_day"><input type="radio" name="u"> 仅工作日送货</div>
 		<div id="only_weekend"><input type="radio" name="u"> 仅周末送货</div>
 		<div id="all_ok"><input type="radio" name="u"> 工作日/周末/节假日均可</div>
@@ -92,65 +95,61 @@
 		<p class="should_total_pay">应付总金额:</p>
 		<p id="should_total_pay">¥43.90</p>
 		<button id="buy">确认购买</button>
-	</div>
-	<!-- 底部 -->
-	<div id="bottom">
-		<div id="service">
-			<p class="service_guarantee">服务保障</p>
-			<ul id="service_list">
-				<li>品牌真品防伪码</li>
-				<li>正品保证</li>
-				<li>30天无条件退货</li>
-				<li>7×24小时客服服务</li>
-			</ul>	
-		</div>
-		<div id="help">
-			<p class="use_help">使用帮助</p>
-			<ul id="help_list">
-				<li>新手指南</li>
-				<li>常见问题</li>
-				<li>帮助中心</li>
-				<li>用户协议</li>
-			</ul>	
-		</div>
-		<div id="pay">
-			<p class="pay_style">支付方式</p>
-			<ul id="pay_list">
-				<li>货到付款</li>
-				<li>在线支付</li>
-				<li>余额支付</li>
-				<li>现金券支付</li>
-			</ul>	
-		</div>
-		<div id="distribution">
-			<p class="distribution_style">配送方式</p>
-			<ul id="distribution_list">
-				<li>包邮政策</li>
-				<li>配送说明</li>
-				<li>运费说明</li>
-				<li>验货签收</li>
-			</ul>	
-		</div>
-		<div id="after_sales">
-			<p class="after_sales_service">售后服务</p>
-			<ul id="after_sales_list">
-				<li>正品承诺</li>
-				<li>售后咨询</li>
-				<li>退货政策</li>
-				<li>退货办理</li>
-			</ul>	
-		</div>
-		<div id="client">
-			<p class="phone_client">美妆街手机客户端</p>
-			<img src="../images/code_phone.png" class="phone_ewm">	
-			<p class="scan">扫描下载美妆街</br>&nbsp&nbsp&nbsp手机客户端</p>
-		</div>
-		<div id="weixin">
-			<p class="official_weixin">官方微信</p>
-			<img src="../images/code_weixin.png" class="weixin_ewm">	
-			<p class="official_scan">美妆街官方微信</p>
-		</div>
-		<div class="statement">COPYRIGHT © 2016-2019 北京XXXX传媒有限公司 美妆街.COM 保留一切权利。</div>
-	</div>
+	</div> 
+<!-- 底部 -->
+	<div id="f_footer">
+    <div id="footer">
+        <div>
+            <div>
+                <li><span>服务保障</span></li>
+                <li>品牌真品防伪码</li>
+                <li>正品保证</li>
+                <li>30天无条件退货</li>
+                <li>7×24小时客服服务</li>
+            </div>
+            <div>
+                <li><span>使用帮助</span></li>
+                <li>新手指南</li>
+                <li>常见问题</li>
+                <li>帮助中心</li>
+                <li>用户协议</li>
+            </div>
+            <div>
+                <li><span>支付方式</span></li>
+                <li>货到付款</li>
+                <li>在线支付</li>
+                <li>余额支付</li>
+                <li>现金券支付</li>
+            </div>
+            <div>
+                <li><span>配送方式</span></li>
+                <li>包邮政策</li>
+                <li>配送说明</li>
+                <li>运费说明</li>
+                <li>验货签收</li>
+            </div>
+            <div>
+                <li><span>售后服务</span></li>
+                <li>正品承诺</li>
+                <li>售后咨询</li>
+                <li>退货政策</li>
+                <li>退货办理</li>
+            </div>
+            <p>COPYRIGHT © 2016-2019 北京XXXX传媒有限公司 美妆街.COM 保留一切权利。</p>
+        </div>
+        <div class="phone">
+            <span>美妆街手机客户端</span>
+            <img src="../images/code_phone.png">
+            <p>扫描下载美妆街</p>
+            <p>手机客户端</p>
+        </div>
+        <div class="weixin">
+            <span>官方微信</span>
+            <img src="../images/code_weixin.png">
+            <p>美妆街官方微信</p>
+        </div>
+    </div>
+</div>
+	
 </body>
 </html>

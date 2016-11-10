@@ -1,86 +1,26 @@
-body{
-	margin: 0;
-	padding: 0;
-}
-/*顶部*/
-#top{
+.statement{
+	width: 1010px;
+	height: 128px;
 	position: relative;
-	width: 1280px;
-	height: 35px;
-	background-color: #d41a39;
-}
-#top p{
-	color: white;
-	font-size: 12px;
-}
-.welcome{
-	position: absolute;
-	left:200px;
-	top: 0px;
-	width:100px;
-
-}
-.introduce{
-	position: absolute;
-	left: 345px;
-	top: 0px;
-	width: 385px;
-}
-#top_list{
-	position: absolute;
-	left: 700px;
-	top: -10px;
-}
-#top_list li{
-	list-style: none;
-	float: left;
-	color: white;
-	font-size: 12px;
-	margin-left: 5px;
-	padding: 5px 0;
-}
-#top_list li a{
-	text-decoration: none;
-	font-size: 12px;
-	color:white;
-}
-#user{
-	width: 60px;
-	height: 15px;
-	background-color: #d41a39;
-	border: 1px solid white;
-	margin: 10px;
-	position: absolute;
-	left: 233px;
-	top: 10px;
-	display: none;
-}
-#drop-down:hover #user{
-	display: block;
-}
-/*确认地址页面*/
-.cofirm_address{
-	position: relative;
-	width: 100%;
-	height: 1150px;
+	margin: 0px auto;
 	
 }
 
 .logo{
 	position: absolute;
-	left: 190px;
+	left: 0px;
 	top: 46px;
 }
 .progress{
 	position: absolute;
-	left: 720px;
-	top: 80px;
+	left: 630px;
+	top: 70px;
 }
 .mycar{
 	color: #d41a39;
 	font-size: 12px;
 	position: absolute;
-	left: 695px;
+	left: 605px;
 	top: 85px;
 }
 .confirm_information{
@@ -88,69 +28,81 @@ body{
 	font-size: 12px;
 	position: absolute;
 	top: 85px;
-	left: 780px;
+	left: 690px;
 }
 .confirm_pay{
 	color: #9c9b9b;
 	font-size: 12px;
 	position: absolute;
 	top: 85px;
-	left: 885px;	
+	left: 782px;	
 }
 .choose_style{
 	color: #9c9b9b;
 	font-size: 12px;
 	position: absolute;
 	top: 85px;
-	left: 960px;	
+	left: 880px;	
 }
 .welcome_user{
 	color: #4f4f4f;
 	font-size: 12px;
 	position: absolute;
-	top: 0px;
-	left: 920px;	
+	top: 10px;
+	left: 835px;	
 }
 #username{
 	position: absolute;
-	left: 965px;
-	top: 0px;
+	left: 885px;
+	top: 10px;
 	font-size: 12px;
 	color: #d41a39;
 }
 #exit{
 	position: absolute;
-	left: 1040px;
-	top: 0px;
+	left: 955px;
+	top: 10px;
 	font-size: 12px;
 	color: #4f4f4f;
 }
 .hrhr{
 	border: 4px solid #bebebe;
 	width: 100%;
-	position: absolute;
-	top: 145px;
+	position: relative;
+	margin: 0 auto;
 }
+
+
+/*确认收货地址页面*/
+.cofirm_address{
+	position: relative;
+	width: 1010px;
+	height: 1150px;
+	margin: 0 auto;
+	
+}
+
+
 .confirm_shipping_address{
 	position: absolute;
-	left: 220px;
-	top: 190px;
+	left: 20px;
+	top: 30px;
 	font-size: 20px;
 	color: #d41a39;
 }
 .allgoods_hr{
 	position: absolute;
-	left: 185px;
-	top: 255px;
-	width: 71%;
+	left: 0px;
+	top: 80px;
+	width: 100%;
 }
 .send_address{
 	width: 800px;
     height: 43px;
     background: #f8bdc7;
     position: absolute;
-    left: 225px;
-    top: 290px;
+    left: 85px;
+    top: 120px;
 }
 .local{
 	position: absolute;
@@ -160,19 +112,19 @@ body{
 .sendto{
 	position: absolute;
 	left: 45px;
-	top: 5px;
+	top: 15px;
 	color: #d41a39;
 	font-size: 12px;
 }
 #radio_address1{
 	position: absolute;
-	left: 100px;
-	top: 12px;
+	left: 230px;
+	top: 135px;
 }
 #address1{
 	position: absolute;
-	left: 130px;
-	top: 5px;
+	left: 250px;
+	top: 135px;
 	color: #000000;
 	font-size: 12px;
 }
@@ -186,13 +138,13 @@ body{
 }
 #radio_address2{
 	position: absolute;
-	left: 325px;
-	top: 350px;
+	left: 230px;
+	top: 200px;
 }
 #address2{
 	position: absolute;
-	left: 355px;
-	top: 342px;
+	left: 250px;
+	top: 200px;
 	color: #000000;
 	font-size: 12px;
 }
@@ -201,113 +153,117 @@ body{
 	height: 26px;
 	border: none;
 	position: absolute;
-	left: 360px;
-	top: 390px;
+	left: 250px;
+	top: 240px;
 	background-color: #e2e2e2;
 }
-
 .send_time{
 	position: absolute;
-	left: 220px;
-	top: 450px;
+	left: 20px;
+	top: 320px;
 	font-size: 20px;
 	color: #d41a39;
 }
 .send_time_hr{
 	position: absolute;
-	left: 185px;
-	top: 520px;
-	width: 71%;
+	left: 0px;
+	top: 370px;
+	width: 100%;
 }
 
 #only_work_day{
 	
-	height: 38px;
+	height: 10px;
 	border: none;
 	background-color: #e2e2e2;
 	position: absolute;
-	left: 200px;
-	top: 550px;
+	left: 70px;
+	top: 420px;
+	padding: 20px 10px;
 
 }
 #only_weekend{
-	 height: 38px;
+	 height: 10px;
 	border: none;
 	background-color: #e2e2e2;
 	position: absolute;
-	left: 410px;
-	top: 550px;
+	left: 270px;
+	top: 420px;
+	padding: 20px 10px;
 }
 #all_ok{
-	 height: 38px;
+	 height: 10px;
 	border: none;
 	background-color: #e2e2e2;
 	position: absolute;
-	left: 620px;
-	top: 550px;
+	left: 470px;
+	top: 420px;
+	padding: 20px 10px;
 }
+
 .confirm_goods_list{
 	position: absolute;
-	left: 220px;
-	top: 630px;
+	left: 20px;
+	top: 550px;
 	font-size: 20px;
 	color: #d41a39;
 }
 .confirm_goods_list_hr{
 	position: absolute;
-	left: 185px;
-	top: 700px;
-	width: 71%;
+	left: 0px;
+	top: 600px;
+	width: 100%;
 }
+
 .goodslist1{
-	width: 905px;
-	height: 150px;
-	position: absolute;
-	left: 185px;
-	top: 740px;
-	border: 1px solid #9c9b9b;
+	width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0px;
+    top: 650px;
+    border: 1px solid #9c9b9b;
 }
 #list_goods_img{
 	position: absolute;
 	left: 25px;
 	top: 30px;
-	width: 12%;
+	width: 11%;
 }
 .information{
 	position: absolute;
-	left: 140px;
-	top: 0px;
+	left: 145px;
+	top: 15px;
 	font-size: 12px;
 
 }
 .information_name{
 	position: absolute;
 	left: 190px;
-	top: 40px;
+	top: 50px;
 	font-size: 12px;
 }
 #information_name{
 	position: absolute;
 	left: 260px;
-	top: 40px;
+	top: 50px;
 	font-size: 12px;
 }
 .information_brand{
 	position: absolute;
 	left: 190px;
-	top: 80px;
+	top: 90px;
 	font-size: 12px;
 }
 #information_brand{
 	position: absolute;
 	left: 260px;
-	top: 80px;
+	top: 90px;
 	font-size: 12px;
 }
 .information_caozuo{
 	position: absolute;
-	left: 450px;
-	top:0px;
+	left: 575px;
+	top:10px;
 	font-size: 12px;
 	color: #5e5e5e;
 
@@ -320,7 +276,7 @@ body{
 }
 #buynum{
 	position: absolute;
-	left: 570px;
+	left: 655px;
 	font-size: 12px;
 	color: #5e5e5e;
 	top: 65px;
@@ -328,143 +284,143 @@ body{
 }
 #one_money{
 	position: absolute;
-	left: 660px;
+	left: 745px;
 	font-size: 12px;
 	color: #5e5e5e;
 	top: 65px;
 }
 #total_money{
 	position: absolute;
-	left: 770px;
+	left: 855px;
 	font-size: 12px;
 	color: #5e5e5e;
 	top: 65px;
 }
 .goodslist2{
-	width: 905px;
+	width: 100%;
 	height: 45px;
 	position: absolute;
-	left: 185px;
-	top: 891px;
+	left: 0px;
+	top: 801px;
 	border: 1px solid #9c9b9b;
 }
 .sendstyle{
 	position: absolute;
-	left: 625px;
-	top:5px;
+	left: 655px;
+	top:15px;
 	font-size: 12px;
 	color: #5e5e5e;
 }
 #sendstyle{
 	position: absolute;
-	left: 685px;
-	top:5px;
+	left: 715px;
+	top:15px;
 	font-size: 12px;
 	color: #5e5e5e;
 }
 .sendmoney{
 	position: absolute;
-	left: 765px;
-	top:5px;
+	left: 795px;
+	top:15px;
 	font-size: 12px;
 	color: #5e5e5e;
 }
 #sendmoney{
 	position: absolute;
-	left: 825px;
-	top:5px;
+	left: 855px;
+	top:15px;
 	font-size: 12px;
 	color: #5e5e5e;
 }
 #fapiao{
 	position: absolute;
-	left: 215px;
-	top: 960px;
+	left: 30px;
+	top: 870px;
 
 }
 .fapiao_p{
 	position: absolute;
-	left: 240px;
-	top: 950px;
+	left: 55px;
+	top: 870px;
 	color: #5e5e5e;
 	font-size: 12px;
 
 }
 .information_bottom1{
 	position: absolute;
-	left: 820px;
-	top: 950px;
+	left: 780px;
+	top: 870px;
 	color: #5e5e5e;
 	font-size: 12px;
 }
 #number{
 	position: absolute;
-	left: 850px;
-	top: 950px;
+	left: 810px;
+	top: 870px;
 	color: #d41a39;
 	font-size: 12px;
 }
 .information_bottom2{
 	position: absolute;
-	left: 870px;
-	top: 950px;
+	left: 830px;
+	top: 870px;
 	color: #5e5e5e;
 	font-size: 12px;
 }
 #total_qian{
 	position: absolute;
-	left: 1010px;
-	top: 950px;
+	left: 970px;
+	top: 870px;
 	color: #d41a39;
 	font-size: 12px;
 }
 .total_send_qian{
 	position: absolute;
-	left: 910px;
-	top: 980px;
+	left: 870px;
+	top: 900px;
 	color: #5e5e5e;
 	font-size: 12px;
 }
 #total_send_qian{
 	position: absolute;
-	left: 1010px;
-	top: 980px;
+	left: 970px;
+	top: 900px;
 	color: #d41a39;
 	font-size: 12px;
 }
 .should_pay{
 	position: absolute;
-	left: 887px;
-	top: 1010px;
+	left: 847px;
+	top: 930px;
 	color: #5e5e5e;
 	font-size: 12px;
 }
 #should_pay{
 	position: absolute;
-	left: 1010px;
-	top: 1010px;
+	left: 970px;
+	top: 930px;
 	color: #d41a39;
 	font-size: 12px;
 }
 #goback{
 	position: absolute;
-	left: 215px;
-	top: 1060px;
+	left: 55px;
+	top: 980px;
 	color: #d41a39;
 	font-size: 13px;
 	text-decoration: none;
 }
 .should_total_pay{
 	position: absolute;
-	left: 750px;
-	top: 1060px;
+	left: 700px;
+	top: 980px;
 	color: #5e5e5e;
 	font-size: 12px;
 }
 #should_total_pay{
 	position: absolute;
-	left: 830px;
-	top: 1045px;
+	left: 780px;
+	top: 975px;
 	color: #d41a39;
 	font-size: 20px;
 }
@@ -474,157 +430,8 @@ body{
 	background: #d41a39;
 	border: none;
 	position: absolute;
-	left: 955px;
-	top: 1050px;
+	left: 870px;
+	top: 970px;
 	color: white;
 	font-size: 18px;
 }
-
-/*底部*/
-#bottom{
-	position: relative;
-	width: 1280px;
-	height: 230px;
-	background-color: #d41a39;
-}
-.service_guarantee{
-	position: absolute;
-	left: 130px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-#service_list{
-	position: absolute;
-	left: 90px;
-	top: 35px;
-}
-#service li{
-	list-style: none;
-	color: white;
-	font-size: 10px;
-	margin-top: 10px;
-}
-.use_help{
-	position: absolute;
-	left: 270px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-#help_list{
-	position: absolute;
-	left: 230px;
-	top: 35px;
-}
-#help li{
-	list-style: none;
-	color: white;
-	font-size: 10px;
-	margin-top: 10px;
-}
-.pay_style{
-	position: absolute;
-	left: 410px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-#pay_list{
-	position: absolute;
-	left: 370px;
-	top: 35px;
-}
-#pay li{
-	list-style: none;
-	color: white;
-	font-size: 10px;
-	margin-top: 10px;
-}
-.distribution_style{
-	position: absolute;
-	left: 560px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-#distribution_list{
-	position: absolute;
-	left: 510px;
-	top: 35px;
-}
-#distribution li{
-	list-style: none;
-	color: white;
-	font-size: 10px;
-	margin-top: 10px;
-}
-.after_sales_service{
-	position: absolute;
-	left: 690px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-#after_sales_list{
-	position: absolute;
-	left: 650px;
-	top: 35px;
-}
-#after_sales li{
-	list-style: none;
-	color: white;
-	font-size: 10px;
-	margin-top: 10px;
-}
-.phone_client{
-	position: absolute;
-	left: 830px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-.phone_ewm{
-	position: absolute;
-	left: 837px;
-	top: 50px;
-}
-.scan{
-	position: absolute;
-	left: 843px;
-	top: 155px;
-	font-size: 13px;
-	color: white;
-}
-.official_weixin{
-	position: absolute;
-	left: 1040px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-.weixin_ewm{
-	position: absolute;
-	left: 1020px;
-	top: 49px;
-}
-.official_scan{
-	position: absolute;
-	left: 1030px;
-	top: 155px;
-	font-size: 13px;
-	color: white;
-}
-.statement{
-	position: absolute;
-	top: 180px;
-	left: 180px;
-	color: white;
-	font-size: 8px;
-
-}
-
-
-
-
-
