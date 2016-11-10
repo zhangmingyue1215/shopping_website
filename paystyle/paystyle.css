@@ -1,85 +1,28 @@
-body{
-	margin: 0;
-	padding: 0;
-}
-/*顶部*/
-#top{
+
+/*选择支付方式页面*/
+.statement{
+	width: 1010px;
+	height: 128px;
 	position: relative;
-	width: 1280px;
-	height: 35px;
-	background-color: #d41a39;
-}
-#top p{
-	color: white;
-	font-size: 12px;
-}
-.welcome{
-	position: absolute;
-	left:200px;
-	top: 0px;
-	width:100px;
+	margin: 0px auto;
 
 }
-.introduce{
-	position: absolute;
-	left: 345px;
-	top: 0px;
-	width: 385px;
-}
-#top_list{
-	position: absolute;
-	left: 700px;
-	top: -10px;
-}
-#top_list li{
-	list-style: none;
-	float: left;
-	color: white;
-	font-size: 12px;
-	margin-left: 5px;
-	padding: 5px 0;
-}
-#top_list li a{
-	text-decoration: none;
-	font-size: 12px;
-	color:white;
-}
-#user{
-	width: 60px;
-	height: 15px;
-	background-color: #d41a39;
-	border: 1px solid white;
-	margin: 10px;
-	position: absolute;
-	left: 233px;
-	top: 10px;
-	display: none;
-}
-#drop-down:hover #user{
-	display: block;
-}
-/*选择支付方式页面*/
-.choose_pay_style{
-	position: relative;
-	width: 100%;
-	height: 1120px;
-	
-}
+
 .logo{
 	position: absolute;
-	left: 190px;
+	left: 0px;
 	top: 46px;
 }
 .progress{
 	position: absolute;
-	left: 720px;
-	top: 80px;
+	left: 630px;
+	top: 70px;
 }
 .mycar{
 	color: #d41a39;
 	font-size: 12px;
 	position: absolute;
-	left: 695px;
+	left: 605px;
 	top: 85px;
 }
 .confirm_information{
@@ -87,101 +30,112 @@ body{
 	font-size: 12px;
 	position: absolute;
 	top: 85px;
-	left: 780px;
+	left: 690px;
 }
 .confirm_pay{
 	color: #9c9b9b;
 	font-size: 12px;
 	position: absolute;
 	top: 85px;
-	left: 885px;	
+	left: 782px;	
 }
 .choose_style{
 	color: #9c9b9b;
 	font-size: 12px;
 	position: absolute;
 	top: 85px;
-	left: 960px;	
+	left: 880px;	
 }
 .welcome_user{
 	color: #4f4f4f;
 	font-size: 12px;
 	position: absolute;
-	top: 0px;
-	left: 920px;	
+	top: 10px;
+	left: 835px;	
 }
 #username{
 	position: absolute;
-	left: 965px;
-	top: 0px;
+	left: 885px;
+	top: 10px;
 	font-size: 12px;
 	color: #d41a39;
 }
 #exit{
 	position: absolute;
-	left: 1040px;
-	top: 0px;
+	left: 955px;
+	top: 10px;
 	font-size: 12px;
 	color: #4f4f4f;
 }
 .hrhr{
 	border: 4px solid #bebebe;
 	width: 100%;
-	position: absolute;
-	top: 145px;
+	position: relative;
+	margin: 0 auto;
 }
+
+.choose_pay_style{
+	position: relative;
+	width: 1010px;
+	height: 950px;
+	margin: 0 auto;
+	
+	
+}
+
 .notice{
 	font-size: 25px;
 	position: absolute;
-	left: 210px;
-	top: 160px;
+	left: 20px;
+	top: 30px;
 }
 .shouldpays{
 	font-size: 12px;
 	position: absolute;
-	left: 220px;
-	top: 230px;
+	left: 40px;
+	top:90px;
 }
 #shouldpay{
 	position: absolute;
 	font-size: 15px;
 	color: #d41a39;
-	left: 280px;
-	top: 225px;
+	left: 95px;
+	top: 90px;
 }
 .takegoods{
 	font-size: 12px;
 	position: absolute;
-	left: 220px;
-	top: 260px;
+	left: 40px;
+	top: 125px;
 }
 
 #takegoods_information{
 	font-size: 12px;
 	position: absolute;
-	left: 280px;
-	top: 260px;
+	left: 100px;
+	top: 125px;
 }
 .sendtime{
 	font-size: 12px;
 	position: absolute;
-	left: 220px;
-	top: 290px;
+	left: 40px;
+	top: 160px;
 }
 
 #sendtime{
 	font-size: 12px;
 	position: absolute;
-	left: 280px;
-	top: 290px;
+	left: 100px;
+	top: 160px;
 }
+
 .meizhuangjieyue{
 	position: absolute;
-	width: 905px;
-	height:41px;
-	left: 185px;
-	top: 360px;
-	border: 1px solid #9c9b9b;
+    width: 100%;
+    height: 41px;
+    left: 0px;
+    top: 220px;
+    border: 1px solid #9c9b9b;
 }
 #mzj{
 	position: absolute;
@@ -191,41 +145,41 @@ body{
 .mzjye{
 	position: absolute;
 	left: 55px;
-	top: 3px;
+	top: 10px;
 	font-size: 12px;
 }
 #zongjine{
 	position:absolute;
 	left: 145px;
-	top: 3px;
+	top: 10px;
 	font-size: 12px;
 	color: #d41a39;
 }
 #mzjyue{
 	position:absolute;
 	left: 295px;
-	top: 3px;
+	top: 10px;
 	font-size: 12px;
 	color: #d41a39;
 }
 .zhifubao{
 	position: absolute;
-	width: 905px;
-	height:195px;
-	left: 185px;
-	top: 402px;
-	border: 1px solid #9c9b9b;
+    width: 100%;
+    height: 195px;
+    left: 0px;
+    top: 262px;
+    border: 1px solid #9c9b9b;
 }
 #zfb{
 	position: absolute;
 	left: 30px;
-	top: 10px;
+	top: 20px;
 }
 .zcw{
 	font-size: 12px;
     position: absolute;
     left: 55px;
-    top: 3px;
+    top: 20px;
 }
 #zhifubao{
 	
@@ -261,12 +215,11 @@ body{
     top: 80px;
 }
 .yhkandwy{
-	width: 948px;
+	width: 100%;
     height: 500px;
-    
     position: absolute;
-    top: 583px;
-    left: 145px;
+    top: 458px;
+    left: 0px;
 }
 .yhkandwy>ul>li{
 	border: 1px solid #9c9b9b;
@@ -276,12 +229,12 @@ body{
 }
 .yhkandwy>ul>li>ul{
 	list-style: none;
-	margin: 20px -45px;
+	margin: 25px -5px;
 
 }
 .yhkandwy>ul>li>ul>li{
 	display: inline-block;
-	padding: 0px 5px;
+	padding: 0px 15px;
 }
 .yinhangka{
 	font-size: 12px;
@@ -291,24 +244,24 @@ body{
 	float: right;
 }
 .yhkandwy>ul>li>button{
-	margin-left: 780px;  
-}
-#yhk_zhankai{
+	margin-left: 850px;  
 	width: 50px;
-	height: 20px;
-	border: 1px solid #9c9b9b;
-	background-color: white;
+    height: 20px;
+    border: 1px solid #9c9b9b;
+    background-color: white;
+    cursor: pointer;
 }
+
 .yhkandwy>ul>li>ul>div>ul{
 	list-style: none;
 }
 .yhkandwy>ul>li>ul>div>ul>li{
 	display: inline-block;
-	padding: 0px 5px;
+	padding: 0px 15px;
 }
 .yhkandwy>ul>li>ul>div>ul{
 	list-style: none;
-	margin: 20px -45px;
+	margin: 20px 0px;
 
 }
 .yhkandwy>ul>li>ul>div>ul>li>img{
@@ -318,156 +271,6 @@ body{
 #yincang_wangyin{
 	display: none;
 }
-
-
-
-/*底部*/
-#bottom{
-	position: relative;
-	width: 1280px;
-	height: 230px;
-	background-color: #d41a39;
+#yincang{
+	display: none;
 }
-.service_guarantee{
-	position: absolute;
-	left: 130px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-#service_list{
-	position: absolute;
-	left: 90px;
-	top: 35px;
-}
-#service li{
-	list-style: none;
-	color: white;
-	font-size: 10px;
-	margin-top: 10px;
-}
-.use_help{
-	position: absolute;
-	left: 270px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-#help_list{
-	position: absolute;
-	left: 230px;
-	top: 35px;
-}
-#help li{
-	list-style: none;
-	color: white;
-	font-size: 10px;
-	margin-top: 10px;
-}
-.pay_style{
-	position: absolute;
-	left: 410px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-#pay_list{
-	position: absolute;
-	left: 370px;
-	top: 35px;
-}
-#pay li{
-	list-style: none;
-	color: white;
-	font-size: 10px;
-	margin-top: 10px;
-}
-.distribution_style{
-	position: absolute;
-	left: 560px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-#distribution_list{
-	position: absolute;
-	left: 510px;
-	top: 35px;
-}
-#distribution li{
-	list-style: none;
-	color: white;
-	font-size: 10px;
-	margin-top: 10px;
-}
-.after_sales_service{
-	position: absolute;
-	left: 690px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-#after_sales_list{
-	position: absolute;
-	left: 650px;
-	top: 35px;
-}
-#after_sales li{
-	list-style: none;
-	color: white;
-	font-size: 10px;
-	margin-top: 10px;
-}
-.phone_client{
-	position: absolute;
-	left: 830px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-.phone_ewm{
-	position: absolute;
-	left: 837px;
-	top: 50px;
-}
-.scan{
-	position: absolute;
-	left: 843px;
-	top: 155px;
-	font-size: 13px;
-	color: white;
-}
-.official_weixin{
-	position: absolute;
-	left: 1040px;
-	top: 10px;
-	color: white;
-	font-size: 15px;
-}
-.weixin_ewm{
-	position: absolute;
-	left: 1020px;
-	top: 49px;
-}
-.official_scan{
-	position: absolute;
-	left: 1030px;
-	top: 155px;
-	font-size: 13px;
-	color: white;
-}
-.statement{
-	position: absolute;
-	top: 180px;
-	left: 180px;
-	color: white;
-	font-size: 8px;
-
-}
-
-
-
-
-
-
-
