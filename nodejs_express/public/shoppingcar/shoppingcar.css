@@ -1,0 +1,409 @@
+
+
+/*购物车详情*/
+.statement{
+	width: 1010px;
+	height: 128px;
+	position: relative;
+	margin: 0px auto;
+	
+}
+
+.logo{
+	position: absolute;
+	left: 0px;
+	top: 46px;
+}
+.progress{
+	position: absolute;
+	left: 630px;
+	top: 70px;
+}
+.mycar{
+	color: #d41a39;
+	font-size: 12px;
+	position: absolute;
+	left: 605px;
+	top: 85px;
+}
+.confirm_information{
+	color: #9c9b9b;
+	font-size: 12px;
+	position: absolute;
+	top: 85px;
+	left: 690px;
+}
+.confirm_pay{
+	color: #9c9b9b;
+	font-size: 12px;
+	position: absolute;
+	top: 85px;
+	left: 782px;	
+}
+.choose_style{
+	color: #9c9b9b;
+	font-size: 12px;
+	position: absolute;
+	top: 85px;
+	left: 880px;	
+}
+.welcome_user{
+	color: #4f4f4f;
+	font-size: 12px;
+	position: absolute;
+	top: 10px;
+	left: 835px;	
+}
+#username{
+	position: absolute;
+	left: 885px;
+	top: 10px;
+	font-size: 12px;
+	color: #d41a39;
+}
+#exit{
+	position: absolute;
+	left: 955px;
+	top: 10px;
+	font-size: 12px;
+	color: #4f4f4f;
+}
+.hrhr{
+	border: 4px solid #bebebe;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+.shoppingcar{
+	width: 1010px;
+	height: 175px;
+	margin: 0 auto;
+	position: relative;
+	
+}
+.allgoods{
+	position: absolute;
+	left: 30px;
+	top: 50px;
+	font-size: 23px;
+	color: #d41a39;
+}
+.allgoods_hr{
+	position: absolute;
+	left: 0px;
+	top: 100px;
+	width: 100%;
+}
+#allselect1{
+	position: absolute;
+	left: 30px;
+	top: 140px;
+
+}
+.allselect1_p{
+	position: absolute;
+	left: 50px;
+	top: 140px;
+	color: #5e5e5e;
+	font-size: 12px;
+
+}
+.car_goods{
+	width: 1010px;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid #bebebe;
+}
+.car_goods>ul>li{
+	width: 1010px;
+	height: 175px;
+	position: relative;
+
+	border: 1px solid #bebebe;
+}
+.car_goods>ul>li>input{
+	position: absolute;
+}
+.car_goods>ul>li>p{
+	position: absolute;
+}
+.car_goods>ul>li>img{
+	position: absolute;
+
+}
+.car_goods>ul>li>ul{
+	position: absolute;
+}
+.car_goods>ul>li>ul>li{
+	float: left;
+	margin: 10px 50px;
+}
+.car_goods>ul>li>div>button{
+	position: absolute;
+	width: 15px;
+	height: 20px;
+	background-color: #ffffff;
+	border: 1px solid #bdbdbd;
+	font-size: 12px;
+}
+.car_goods>ul>li>div>input{
+	width: 58px;
+	height: 18px;
+	border: 1px solid #bdbdbd;
+	position: absolute;
+}
+
+.clear{
+	width: 1010px;
+	height: 30px;
+	margin: 10px auto;
+
+	position: relative;
+}
+.clear>input{
+	position: absolute;
+}
+.clear>p{
+	position: absolute;
+}
+
+
+
+
+
+#jiesuanlan{
+	width: 1010px;
+	height: 47px;
+	background: #f8bdc7;
+	position: relative;
+	margin: 0 auto;
+}
+#jiesuanlan>input{
+	position: absolute;
+	left: 30px;
+	top: 15px;
+}
+#jiesuanlan>p{
+	position: absolute;
+}
+#jiesuanlan>button{
+	position: absolute;
+	background-color: #d41a39;
+	width: 135px;
+	height: 100%;
+	position: absolute;
+	left: 875px;
+	top: 0px;
+	border: none;
+}#jiesuanlan>button>a{
+	 font-size: 15px;
+	 color: white;
+	 text-decoration:none;
+ }
+ .oncelook{
+	 width: 1010px;
+	 height:520px;
+	 margin: 0 auto;
+	 position: relative;
+
+ }
+
+/*最近浏览*/
+.recent_see{
+	position: absolute;
+	left: 30px;
+	top: 50px;
+	font-size: 23px;
+	color: #d41a39;
+}
+.recent_see_hr{
+	position: absolute;
+	left: 0px;
+	top: 110px;
+	width: 100%;
+}
+.sale1{
+	border: 2px solid #eceaed;
+	width: 200px;
+	height: 266px;
+	position: absolute;
+	top: 170px;
+	left: 50px;
+}
+.sale1>img{
+	width: 100%;
+}
+.background{
+	width: 100%;
+	height: 69px;
+	background-color: #eceaed;
+}
+#sale1_name{
+	position: absolute;
+	left: 10px;
+	top: 205px;
+	color: #3a3a3a;
+	font-size: 12px;
+}
+#sale1_descript{
+	position: absolute;
+	left: 10px;
+	top: 235px;
+	color: #7f7e7e;
+	font-size: 12px;
+}
+.sale1_money_symbol{
+	color: #9f0404;
+	font-size: 12px;
+	position: absolute;
+	left: 140px;
+	top: 235px;
+
+}
+#sale1_money_num{
+	color: #9f0404;
+	font-size: 30px;
+	position: absolute;
+	left: 145px;
+	top: 220px;
+
+}
+.sale2{
+	border: 2px solid #eceaed;
+	width: 200px;
+	height: 266px;
+	position: absolute;
+	top: 170px;
+	left: 285px;
+}
+.sale2>img{
+	width: 100%;
+}
+.background2{
+	width: 100%;
+	height: 69px;
+	background-color: #eceaed;
+}
+#sale2_name{
+	position: absolute;
+	left: 10px;
+	top: 205px;
+	color: #3a3a3a;
+	font-size: 12px;
+}
+#sale2_descript{
+	position: absolute;
+	left: 10px;
+	top: 235px;
+	color: #7f7e7e;
+	font-size: 12px;
+}
+.sale2_money_symbol{
+	color: #9f0404;
+	font-size: 12px;
+	position: absolute;
+	left: 140px;
+	top: 235px;
+
+}
+#sale2_money_num{
+	color: #9f0404;
+	font-size: 30px;
+	position: absolute;
+	left: 145px;
+	top: 220px;
+
+}
+.sale3{
+	border: 2px solid #eceaed;
+	width: 200px;
+	height: 266px;
+	position: absolute;
+	top: 170px;
+	left: 520px;
+}
+.sale3>img{
+	width: 100%;
+}
+.background3{
+	width: 100%;
+	height: 69px;
+	background-color: #eceaed;
+}
+#sale3_name{
+	position: absolute;
+	left: 10px;
+	top: 205px;
+	color: #3a3a3a;
+	font-size: 12px;
+}
+#sale3_descript{
+	position: absolute;
+	left: 10px;
+	top: 235px;
+	color: #7f7e7e;
+	font-size: 12px;
+}
+.sale3_money_symbol{
+	color: #9f0404;
+	font-size: 12px;
+	position: absolute;
+	left: 140px;
+	top: 235px;
+
+}
+#sale3_money_num{
+	color: #9f0404;
+	font-size: 30px;
+	position: absolute;
+	left: 145px;
+	top: 220px;
+
+}
+.sale4{
+	border: 2px solid #eceaed;
+	width: 200px;
+	height: 266px;
+	position: absolute;
+	top: 170px;
+	left: 755px;
+}
+.sale4>img{
+	width: 100%;
+}
+.background4{
+	width: 100%;
+	height: 69px;
+	background-color: #eceaed;
+}
+#sale4_name{
+	position: absolute;
+	left: 10px;
+	top: 205px;
+	color: #3a3a3a;
+	font-size: 12px;
+}
+#sale4_descript{
+	position: absolute;
+	left: 10px;
+	top: 235px;
+	color: #7f7e7e;
+	font-size: 12px;
+}
+.sale4_money_symbol{
+	color: #9f0404;
+	font-size: 12px;
+	position: absolute;
+	left: 140px;
+	top: 235px;
+
+}
+#sale4_money_num{
+	color: #9f0404;
+	font-size: 30px;
+	position: absolute;
+	left: 145px;
+	top: 220px;
+
+}
