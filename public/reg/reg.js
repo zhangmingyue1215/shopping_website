@@ -1,7 +1,9 @@
 (function () {
     var username=document.getElementById('username_input');
     var password=document.getElementById('password_input');
+    var confirm_password = document.getElementById('confirm_password');
     var reg_btn=document.getElementById('confirm_reg');
+    var confirm_password_p = document.getElementById('confirm_password_p');
     function sendCmd(type,cb) {
         var url="http://127.0.0.1:3000/"+type;
         $.post(url,{
@@ -18,7 +20,6 @@
         sendCmd('reg',function (result) {
             console.log(result);
             if(result){
-
                 alert('注册成功');
                 location.href='../login/login.html'
 
@@ -26,5 +27,16 @@
                 alert('该用户名已存在')
             }
         });
+
     }
+
+    // function pwd() {
+    //     if(confirm_password.value ===password.value){
+    //         confirm_password_p.style.display = 'none';
+    //     }else {
+    //         confirm_password_p.style.display = 'block';
+    //
+    //     }
+    // }
+    // pwd();
 })();
