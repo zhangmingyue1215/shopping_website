@@ -1,6 +1,4 @@
-/**
- * Created by Administrator on 2016/11/7 0007.
- */
+
 var select_div = document.getElementById('select_div');
 var pinpai_sel1 = select_div.childNodes[1].childNodes[3].childNodes;
 var pinpai_sel2 = select_div.childNodes[1].childNodes[5].childNodes;
@@ -101,3 +99,60 @@ for (var i = 0; i < paixv_sel.length; i++) {
         }
     })(i);
 }
+
+//从后台加载内容
+(function () {
+    function sendCmd(type,cb) {
+        var url="http://127.0.0.1:3000/"+type;
+        $.post(url,{
+            type:type
+        },function (data,status) {
+            cb(data);
+        })
+    }
+    window.onload=function () {
+            sendCmd('cSelect',function (result) {
+                console.log(result);
+                var list_img = document.getElementsByClassName('list_img');
+                var list_name = document.getElementsByClassName('list_name');
+                var list_num = document.getElementsByClassName('list_num');
+
+               for(var i = 0;i<32;i++){
+                   (function (i) {
+                       list_img[i].src = result[i].Url;
+                       list_name[i].innerHTML = result[i].Name;
+                       list_num[i].innerHTML = result[i].Original;
+                   })(i)
+               }
+            });
+    }
+
+    //搜索功能
+
+    var input = document.getElementById('input');
+    var search_btn = document.getElementById('search_btn');
+
+    var list_img = document.getElementsByClassName('list_img');
+    var list_num = document.getElementsByClassName('list_num');
+    var list_name = document.getElementsByClassName('list_name');
+
+    var url = 'http://127.0.0.1:3000/';
+
+    search_btn.onclick = function () {
+        console.log(input.value);
+        $.post(url+'sList',{
+            input:input.value
+        },function (data,status) {
+            if(data.list!=0){
+                console.log(data);
+                for(var m=0;m<list_img.length;m++){
+                    list_img[m].src = data.list[m].Url;
+                    list_num[m].innerHTML=data.list[m].Price;
+                    list_name[m].innerHTML=data.list[m].Name;
+                }
+            }else{
+                alert("没有搜索到相关物品");
+            }
+        })
+    }
+})();

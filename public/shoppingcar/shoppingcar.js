@@ -3,7 +3,7 @@
      btn_subtraction = document.getElementsByClassName('btn_subtraction');
      btn_add = document.getElementsByClassName('btn_add');
     for(var i=0;i<count.length;i++) {
-        console.log(i);
+        // console.log(i);
         (function (i) {
             btn_subtraction[i].onclick = function () {
                 if (count[i].value > 1) {

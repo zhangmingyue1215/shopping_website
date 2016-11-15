@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../base.css">
     <link rel="stylesheet" href="base_list.css">
     <script defer src="test_list.js"></script>
+    <script src="../login/jquery-3.0.0.js"></script>
 </head>
 <body>
 <div id="t_top">
@@ -30,8 +31,8 @@
         <img height="70" src="../images/logo.png">
         <div>
             <div>
-                <input type="text">
-                <button>搜索</button>
+                <input type="text" id="input">
+                <button id="search_btn">搜索</button>
             </div>
             <div>
                 <a href="#">眼影</a> |
@@ -154,10 +155,10 @@
         </ul>
         <ul id="goods_div">
             <li>
-                <a href="../details/details.html"><img width="239" height="233" src="../images/list/list_goods01.png"></a>
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <a href="../details/details.html"><img width="239" height="233" src="" class="list_img"></a>
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -169,10 +170,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -184,10 +185,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -199,10 +200,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -214,10 +215,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -229,10 +230,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -244,10 +245,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -259,10 +260,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -274,10 +275,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -289,10 +290,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -304,10 +305,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -319,10 +320,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -334,10 +335,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -349,10 +350,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -364,10 +365,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -379,10 +380,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -394,10 +395,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -409,10 +410,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -424,10 +425,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -439,10 +440,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -454,10 +455,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -469,10 +470,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -484,10 +485,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -499,10 +500,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -514,10 +515,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -529,10 +530,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -544,10 +545,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px"class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -559,10 +560,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -574,10 +575,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -589,10 +590,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -604,10 +605,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">
@@ -619,10 +620,10 @@
                 </div>
             </li>
             <li>
-                <img width="239" height="233" src="../images/list/list_goods01.png">
-                <p>兰蔻奇迹BB气垫粉底23/PA++</p>
+                <img width="239" height="233" src="" class="list_img">
+                <p class="list_name"></p>
                 <div>
-                    <p>¥<em style="color: #9f0404;font-size: 30px">299</em></p>
+                    <p>¥<em style="color: #9f0404;font-size: 30px" class="list_num"></em></p>
                     <div>
                         <p>1548人已购买</p>
                         <img src="../images/list/list_xing.png">

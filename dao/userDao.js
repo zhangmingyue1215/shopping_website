@@ -17,7 +17,7 @@ module.exports = {
     login:function (req,res,next) {
         var connection = mysql.createConnection(conf.mysql);
         connection.connect();
-        connection.query(sql.queryById,[req.body.username,req.body.password],function (err,rows,result) {
+        connection.query(sql.user.queryById,[req.body.username,req.body.password],function (err,rows,result) {
                     if(rows.length){
                         res.contentType('json');
                         res.send(JSON.stringify({result:true}));
@@ -33,14 +33,14 @@ module.exports = {
     reg:function (req,res,next) {
         var connection = mysql.createConnection(conf.mysql);
         connection.connect();
-        connection.query(sql.queryById,[req.body.username,req.body.password],function (err,rows,result) {
+        connection.query(sql.user.queryById,[req.body.username,req.body.password],function (err,rows,result) {
             console.log(rows);
             if(rows.length){
                 res.contentType('json');
                 res.send(JSON.stringify({result:false}));
                 res.end();
             }else{
-                connection.query(sql.insert,[req.body.username,req.body.password],function (err,rows,result) {
+                connection.query(sql.user.insert,[req.body.username,req.body.password],function (err,rows,result) {
                 res.contentType('json');
                     res.send(JSON.stringify({result:true}));
                     res.end();
@@ -49,7 +49,48 @@ module.exports = {
             }
 
         });
-     //   connection.end();
+    },
+    cSelect:function (req,res,next) {
+        var connection = mysql.createConnection(conf.mysql);
+        connection.connect();
+        connection.query(sql.goods.queryAll,[req.body.username,req.body.password],function (err,rows,result) {
+            res.send(rows);
+        });
+    },
+    cIndex:function (req,res,next) {
+        var connection = mysql.createConnection(conf.mysql);
+        connection.connect();
+        connection.query(sql.goods.queryByModule,[req.body.username,req.body.password],function (err,rows,result) {
+            res.send(rows);
+        });
+    },
+    cIndex2:function (req,res,next) {
+        var connection = mysql.createConnection(conf.mysql);
+        connection.connect();
+        connection.query(sql.goods.queryByModule2,[req.body.username,req.body.password],function (err,rows,result) {
+            res.send(rows);
+        });
+    },
+    cIndex3:function (req,res,next) {
+        var connection = mysql.createConnection(conf.mysql);
+        connection.connect();
+        connection.query(sql.goods.queryByModule3,[req.body.username,req.body.password],function (err,rows,result) {
+            res.send(rows);
+        });
+    },
+    sList:function (req,res,next) {
+        res.contentType('json');
+        var params = {
+            input:req.body.input
+        };
+        var connection = mysql.createConnection(conf.mysql);
+        connection.connect();
+        connection.query(sql.goods.selectByName,[params.input],function (err,rows,fields) {
+            params.list=rows;
+            res.send(JSON.stringify(params));
+            res.end();
+        });
     }
+
 
 };
