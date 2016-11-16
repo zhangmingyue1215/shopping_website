@@ -110,9 +110,18 @@ for (var i = 0; i < paixv_sel.length; i++) {
             cb(data);
         })
     }
+    var obj={
+        UserName:"",
+        GoodsId:"",
+        GoodsUrl:"",
+        GoodsBrand:"",
+        GoodsEffect:"",
+        Num:"",
+        BuyNum:"",
+        Price:""
+    }
     window.onload=function () {
             sendCmd('cSelect',function (result) {
-                console.log(result);
                 var list_img = document.getElementsByClassName('list_img');
                 var list_name = document.getElementsByClassName('list_name');
                 var list_num = document.getElementsByClassName('list_num');
@@ -124,6 +133,47 @@ for (var i = 0; i < paixv_sel.length; i++) {
                        list_num[i].innerHTML = result[i].Original;
                    })(i)
                }
+
+
+                var addincar = document.getElementsByClassName('addincar');
+                for (var i = 0;i<addincar.length;i++){
+                    (function (i) {
+                        addincar[i].onclick = function () {
+                            alert("加入购物车成功")
+                            console.log("onclick")
+                            console.log(result)
+                            obj.UserName=sessionStorage.UserName;
+                            obj.GoodsId = result[i].Name;
+                            obj.GoodsUrl =result[i].Url;
+                            obj.GoodsBrand= result[i].Brand;
+                            obj.GoodsEffect = result[i].Miaoshu;
+                            obj.Num = result[i].Num;
+                            obj.BuyNum = result[i].BuyNum;
+                            obj.Price =result[i].Price;
+                            function send(type,cb) {
+                                var url="http://127.0.0.1:3000/"+type;
+                                $.post(url,{
+                                    type:type,
+                                    UserName:obj.UserName,
+                                    GoodsId:obj.GoodsId,
+                                    GoodsUrl:obj.GoodsUrl,
+                                    GoodsBrand:obj.GoodsBrand,
+                                    GoodsEffect:obj.GoodsEffect,
+                                    Num:obj.Num,
+                                    BuyNum:obj.BuyNum,
+                                    Price:obj.Price
+                                },function (data,status) {
+                                    cb(data);
+                                })
+
+                            }
+                            send('shoppingCarInsert',function (result) {
+                                console.log(result)
+
+                            })
+                        }
+                    })(i)
+                }
             });
     }
 
@@ -155,4 +205,9 @@ for (var i = 0; i < paixv_sel.length; i++) {
             }
         })
     }
+
+
+//    加入购物车
+
+
 })();

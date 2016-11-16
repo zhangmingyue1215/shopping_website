@@ -98,7 +98,6 @@ module.exports = {
         connection.connect();
         connection.query(sql.shopcar.queryAll,[req.body.username],function (err,rows,result) {
             console.log('rows:');
-            console.log(rows)
             res.send(rows);
         });
     },
@@ -107,6 +106,14 @@ module.exports = {
         connection.connect();
         connection.query(sql.shopcar.delete,[req.body.id],function (err,rows,result) {
             res.send(rows);
+        });
+    },
+    shoppingCarInsert:function (req,res,next) {
+        var connection = mysql.createConnection(conf.mysql);
+        connection.connect();
+        connection.query(sql.shopcar.insert,[req.body.UserName,req.body.GoodsId,req.body.GoodsUrl,req.body.GoodsBrand,req.body.GoodsEffect,req.body.Num,req.body.BuyNum,req.body.Price],function (err,rows,result) {
+            res.send(rows);
+            console.log("server insert")
         });
     }
 };

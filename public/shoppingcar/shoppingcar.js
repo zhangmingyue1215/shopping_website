@@ -11,6 +11,12 @@
     var gb;
     var ul = document.getElementById('ul');
     var uname = document.getElementById('username');
+    var shopcar_buynum = document.getElementById('shopcar_buynum');
+    var shopcar_buymoney1 = document.getElementById('shopcar_buymoney1');
+    var shopcar_buymoney2 = document.getElementById('shopcar_buymoney2');
+
+    var sum = 0;
+
 
     function sendCmd(type,cb) {
         var url="http://127.0.0.1:3000/"+type;
@@ -39,8 +45,10 @@
     }
     window.onload=function () {
         uname.innerHTML = sessionStorage.UserName;
+
         sendCmd('shoppingCar',function (result) {
             console.log(result);
+            shopcar_buynum.innerHTML = result.length;
             for(var u=0;u<result.length;u++){
                 var li = document.createElement("li");
                 ul.appendChild(li);
@@ -71,7 +79,11 @@
                     '<img src="../images/icon/delete.png" style="top: 90px;left: 935px;" class="shopcar_delete" id="del_'+ result[u].id +'">'
             }
 
+
+
+            //删除购物车商品
             var shopcar_delete= document.getElementsByClassName('shopcar_delete');
+
 
             // console.log(id_name.split('_')[1]);
             for(var i=0;i<shopcar_delete.length;i++){
@@ -87,7 +99,7 @@
             }
 
 
-
+            //动态加载购物车数据
             for (var i =0;i<shopcar_img.length;i++){
                 (function (i) {
                     gb = result;
@@ -96,9 +108,20 @@
                     shopcar_brand[i].innerHTML = result[i].GoodsBrand;
                     shopcar_effect[i].innerHTML = result[i].GoodsEffect;
                     shopcar_singlemoney[i].innerHTML = result[i].Price;
-                    shopcar_totalmoney[i].innerHTML = result[i].Price * parseInt(count[i].value);
+                    shopcar_totalmoney[i].innerHTML = result[i].Price * Number(count[i].value);
+
                 })(i)
             }
+            for(var m = 0; m< shopcar_totalmoney.length;m++) {
+                sum += Number(shopcar_singlemoney[m].innerHTML);
+                shopcar_buymoney1.innerHTML = sum;
+                shopcar_buymoney2.innerHTML = sum;
+
+            }
+
+
+
+            //购买数量按钮
             for(var i=0;i<count.length;i++) {
                 // console.log(i);
                 (function (i) {
@@ -106,25 +129,26 @@
                         if (count[i].value > 1) {
                             count[i].value -= 1;
                             shopcar_totalmoney[i].innerHTML = gb[i].Price * count[i].value;
-
+                            sum -= Number(gb[i].Price);
+                            shopcar_buymoney1.innerHTML = sum;
+                            shopcar_buymoney.innerHTML = sum;
                         } else {
                             alert("数量不能为0！")
                         }
                     };
                     btn_add[i].onclick = function () {
-                        count[i].value = parseInt(count[i].value) + 1;
+                        count[i].value = Number(count[i].value) + 1;
                         shopcar_totalmoney[i].innerHTML = gb[i].Price * count[i].value;
-
+                        sum += Number(gb[i].Price);
+                        shopcar_buymoney1.innerHTML = sum;
+                        shopcar_buymoney2.innerHTML = sum;
                     }
                 })(i)
             }
 
             
         });
-        // var shopcar_delete = document.getElementsByClassName('shopcar_delete');
-        // var id_name = shopcar_delete[0].id;
-        // // del_1 [del ,1]
-        // console.log(id_name.split('_')[1]);
+
         sendCmd('shoppingCarDelete',function (result) {
 
         })
