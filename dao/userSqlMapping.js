@@ -13,5 +13,10 @@ module.exports = {
         queryByModule2:'select * from goods where Module = "optimal"',
         queryByModule3:'select * from goods where Module = "xiaoliang"',
         selectByName:'select * from goods where Name = ?'
+    },
+    shopcar:{
+        insert:'insert into  shopcar (UserName,GoodsId,GoodsUrl,GoodsBrand,GoodsEffect,Num,BuyNum,Price) values (?,?,?,?,?,?,?,?)',
+        delete:'delete from shopcar where GoodsUrl = ?',
+        queryAll:'select * from shopcar where UserName = ?'
     }
 };

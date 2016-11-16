@@ -18,6 +18,7 @@ module.exports = {
         var connection = mysql.createConnection(conf.mysql);
         connection.connect();
         connection.query(sql.user.queryById,[req.body.username,req.body.password],function (err,rows,result) {
+            console.log(rows);
                     if(rows.length){
                         res.contentType('json');
                         res.send(JSON.stringify({result:true}));
@@ -90,7 +91,22 @@ module.exports = {
             res.send(JSON.stringify(params));
             res.end();
         });
-    }
-
-
+    },
+    shoppingCar:function (req,res,next) {
+        console.log(req.body);
+        var connection = mysql.createConnection(conf.mysql);
+        connection.connect();
+        connection.query(sql.shopcar.queryAll,[req.body.username],function (err,rows,result) {
+            console.log('rows:');
+            console.log(rows)
+            res.send(rows);
+        });
+    },
+    // shoppingCarDelete:function (req,res,next) {
+    //     var connection = mysql.createConnection(conf.mysql);
+    //     connection.connect();
+    //     connection.query(sql.shopcar.delete,[req.body.username,req.body.password],function (err,rows,result) {
+    //         res.send(rows);
+    //     });
+    // }
 };
