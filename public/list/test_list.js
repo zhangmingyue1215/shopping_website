@@ -122,6 +122,7 @@ for (var i = 0; i < paixv_sel.length; i++) {
     }
     window.onload=function () {
             sendCmd('cSelect',function (result) {
+                console.log(result)
                 var list_img = document.getElementsByClassName('list_img');
                 var list_name = document.getElementsByClassName('list_name');
                 var list_num = document.getElementsByClassName('list_num');
@@ -149,7 +150,7 @@ for (var i = 0; i < paixv_sel.length; i++) {
                             obj.GoodsEffect = result[i].Miaoshu;
                             obj.Num = result[i].Num;
                             obj.BuyNum = result[i].BuyNum;
-                            obj.Price =result[i].Price;
+                            obj.Price =result[i].Original;
                             function send(type,cb) {
                                 var url="http://127.0.0.1:3000/"+type;
                                 $.post(url,{
