@@ -15,10 +15,22 @@
     function sendCmd(type,cb) {
         var url="http://127.0.0.1:3000/"+type;
 
-
         $.post(url,{
             type:type,
             username:sessionStorage.UserName
+        },function (data,status) {
+            cb(data);
+
+            // console.log(data)
+        })
+    }
+
+    function sendDeleteCmd(type,id,cb) {
+        var url="http://127.0.0.1:3000/"+type;
+
+        $.post(url,{
+            type:type,
+            id:id
         },function (data,status) {
             cb(data);
 
@@ -59,11 +71,22 @@
                     '<img src="../images/icon/delete.png" style="top: 90px;left: 935px;" class="shopcar_delete" id="del_'+ result[u].id +'">'
             }
 
+            var shopcar_delete= document.getElementsByClassName('shopcar_delete');
 
-            // var shopcar_delete = document.getElementsByClassName('shopcar_delete');
-            // var id_name = shopcar_delete[0].id;
-            // // del_1 [del ,1]
             // console.log(id_name.split('_')[1]);
+            for(var i=0;i<shopcar_delete.length;i++){
+                (function (i) {
+                    shopcar_delete[i].onclick=function () {
+                        var id_name = shopcar_delete[i].id;
+                        console.log(id_name.split('_')[1]);
+                        sendDeleteCmd('shoppingCarDelete',id_name.split('_')[1],function () {
+                            window.location.reload();
+                        })
+                    }
+                })(i)
+            }
+
+
 
             for (var i =0;i<shopcar_img.length;i++){
                 (function (i) {
@@ -98,7 +121,15 @@
 
             
         });
-        
+        // var shopcar_delete = document.getElementsByClassName('shopcar_delete');
+        // var id_name = shopcar_delete[0].id;
+        // // del_1 [del ,1]
+        // console.log(id_name.split('_')[1]);
+        sendCmd('shoppingCarDelete',function (result) {
+
+        })
+
+
 
     };
 

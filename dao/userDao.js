@@ -102,11 +102,11 @@ module.exports = {
             res.send(rows);
         });
     },
-    // shoppingCarDelete:function (req,res,next) {
-    //     var connection = mysql.createConnection(conf.mysql);
-    //     connection.connect();
-    //     connection.query(sql.shopcar.delete,[req.body.username,req.body.password],function (err,rows,result) {
-    //         res.send(rows);
-    //     });
-    // }
+    shoppingCarDelete:function (req,res,next) {
+        var connection = mysql.createConnection(conf.mysql);
+        connection.connect();
+        connection.query(sql.shopcar.delete,[req.body.id],function (err,rows,result) {
+            res.send(rows);
+        });
+    }
 };

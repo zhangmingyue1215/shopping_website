@@ -37,8 +37,8 @@ router.post('/shoppingCar',function (req,res,next) {
 
   userDao.shoppingCar(req,res,next);
 });
-// router.post('/shoppingCarDelete',function (req,res,next) {
-//
-//   userDao.shoppingCarDelete(req,res,next);
-// });
+router.post('/shoppingCarDelete',function (req,res,next) {
+
+  userDao.shoppingCarDelete(req,res,next);
+});
 module.exports = router;

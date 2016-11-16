@@ -16,7 +16,7 @@ module.exports = {
     },
     shopcar:{
         insert:'insert into  shopcar (UserName,GoodsId,GoodsUrl,GoodsBrand,GoodsEffect,Num,BuyNum,Price) values (?,?,?,?,?,?,?,?)',
-        delete:'delete from shopcar where GoodsUrl = ?',
+        delete:'delete from shopcar where id = ?',
         queryAll:'select * from shopcar where UserName = ?'
     }
 };
