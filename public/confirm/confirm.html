@@ -5,6 +5,8 @@
 	<title>确认地址</title>
 	<link rel="stylesheet" type="text/css" href="../base.css">
 	<link rel="stylesheet" type="text/css" href="cofirm_address.css">
+	<script defer src = "cofirm_address.js"></script>
+	<script src = '../login/jquery-3.0.0.js'></script>
 </head>
 <body>
 <!-- 顶部 -->
@@ -62,42 +64,8 @@
 
 	</div>
 	<div class="goodlist">
-		<ul>
-			<li>
+		<ul id="ul">
 
-				<img src="../images/personal/person_goods.png" style="width: 12%;left: 30px;top: 45px;">
-				<p style="top: 50px;left: 160px;">商品名称:</p>
-				<p style="top:50px;left: 220px;">凯筣丝汀净颜立体五色遮瑕膏5g*5	</p>
-				<p style="top: 80px;left: 160px;">品&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牌:</p>
-				<p style="top: 80px;left: 220px;">凯筣丝汀(Kalisetin)</p>
-				<ul style="top: 10px;left: 460px;">
-					<li>购买数量</li>
-					<li>购买单价</li>
-					<li>小计</li>
-
-				</ul>
-				<p style="top: 95px;left: 530px">1</p>
-				<p style="top: 95px;left: 665px">¥39.90</p>
-				<p style="top: 95px; left: 800px;">¥39.90</p>
-
-			</li>
-			<li>
-				<img src="../images/personal/person_goods.png" style="width: 12%;left: 30px;top: 45px;">
-				<p style="top: 50px;left: 160px;">商品名称:</p>
-				<p style="top:50px;left: 220px;">凯筣丝汀净颜立体五色遮瑕膏5g*5	</p>
-				<p style="top: 80px;left: 160px;">品&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp牌:</p>
-				<p style="top: 80px;left: 220px;">凯筣丝汀(Kalisetin)</p>
-				<ul style="top: 10px;left: 460px;">
-					<li>购买数量</li>
-					<li>购买单价</li>
-					<li>小计</li>
-
-				</ul>
-				<p style="top: 95px;left: 530px">1</p>
-				<p style="top: 95px;left: 665px">¥39.90</p>
-				<p style="top: 95px; left: 800px;">¥39.90</p>
-
-			</li>
 		</ul>
 	</div>
 	<div class="goodslist2">
@@ -111,16 +79,16 @@
 		<input type="checkbox" id="fapiao">
 		<p class="fapiao_p">索要发票</p>
 		<p class="information_bottom1">共计</p>
-		<p id="number">1</p>
+		<p id="number"></p>
 		<p class="information_bottom2">件商品,总金额:</p>
-		<p id="total_qian">¥39.90</p>
+		<p id="total_qian"></p>
 		<p class="total_send_qian">总运费:</p>
 		<p id="total_send_qian">¥5.00</p>
 		<p class="should_pay">应付总金额:</p>
-		<p id="should_pay">¥43.90</p>
+		<p id="should_pay"></p>
 		<a href="#" id="goback">返回修改购买商品</a>
 		<p class="should_total_pay">应付总金额:</p>
-		<p id="should_total_pay">¥43.90</p>
+		<p id="should_total_pay"></p>
 		<button id="buy"><a href="../paystyle/paystyle.html">确认购买</a></button>
 	</div>
 <!-- 底部 -->
@@ -177,6 +145,6 @@
         </div>
     </div>
 </div>
-	
+
 </body>
 </html>

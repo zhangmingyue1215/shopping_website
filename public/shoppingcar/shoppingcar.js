@@ -108,14 +108,14 @@
                     shopcar_brand[i].innerHTML = result[i].GoodsBrand;
                     shopcar_effect[i].innerHTML = result[i].GoodsEffect;
                     shopcar_singlemoney[i].innerHTML = result[i].Price;
-                    shopcar_totalmoney[i].innerHTML = result[i].Price * Number(count[i].value);
+                    shopcar_totalmoney[i].innerHTML = parseInt(result[i].Price * Number(count[i].value));
 
                 })(i)
             }
             for(var m = 0; m< shopcar_totalmoney.length;m++) {
                 sum += Number(shopcar_singlemoney[m].innerHTML);
-                shopcar_buymoney1.innerHTML = sum;
-                shopcar_buymoney2.innerHTML = sum;
+                shopcar_buymoney1.innerHTML = parseInt(sum);
+                shopcar_buymoney2.innerHTML = parseInt(sum);
 
             }
 

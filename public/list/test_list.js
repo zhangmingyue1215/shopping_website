@@ -196,9 +196,9 @@ for (var i = 0; i < paixv_sel.length; i++) {
         },function (data,status) {
             if(data.list!=0){
                 console.log(data);
-                for(var m=0;m<list_img.length;m++){
+                for(var m=0;m<data.list.length;m++){
                     list_img[m].src = data.list[m].Url;
-                    list_num[m].innerHTML=data.list[m].Price;
+                    list_num[m].innerHTML=data.list[m].Original;
                     list_name[m].innerHTML=data.list[m].Name;
                 }
             }else{
