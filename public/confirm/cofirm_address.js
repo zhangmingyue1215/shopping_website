@@ -70,6 +70,14 @@
             }
 
         });
+        var buy = document.getElementById('buy');
+        buy.onclick = function () {
+            sendCmd('clearShoppingcar',function (result) {
+                console.log(result);
+                window.location.reload();
+                location.href="../paystyle/paystyle.html"
+            })
+        }
 
     }
 })()

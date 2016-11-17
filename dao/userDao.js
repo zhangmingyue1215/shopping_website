@@ -113,7 +113,13 @@ module.exports = {
         connection.connect();
         connection.query(sql.shopcar.insert,[req.body.UserName,req.body.GoodsId,req.body.GoodsUrl,req.body.GoodsBrand,req.body.GoodsEffect,req.body.Num,req.body.BuyNum,req.body.Price],function (err,rows,result) {
             res.send(rows);
-            console.log("server insert")
+        });
+    }
+    ,clearShoppingcar:function (req,res,next) {
+        var connection = mysql.createConnection(conf.mysql);
+        connection.connect();
+        connection.query(sql.shopcar.clear,[req.body.username],function (err,rows,result) {
+            res.send(rows);
         });
     }
 };

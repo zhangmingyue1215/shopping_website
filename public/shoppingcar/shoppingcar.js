@@ -131,7 +131,7 @@
                             shopcar_totalmoney[i].innerHTML = gb[i].Price * count[i].value;
                             sum -= Number(gb[i].Price);
                             shopcar_buymoney1.innerHTML = sum;
-                            shopcar_buymoney.innerHTML = sum;
+                            shopcar_buymoney2.innerHTML = sum;
                         } else {
                             alert("数量不能为0！")
                         }
